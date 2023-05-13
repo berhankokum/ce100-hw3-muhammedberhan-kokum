@@ -48,7 +48,7 @@ jobs:
       - name: Generate Coverage Report
         uses: coverallsapp/github-action@v1.3.0
         with:
-          github-token: ${{ secrets.NET_CORE_TOKEN }}
+          github-token: ${{ secrets.CE100_HW3_ALGO }}
           path-to-lcov: ${{ env.COVERAGE_REPORT_DIR }}/lcov.info
           
       - name: Publish Artifacts
@@ -81,7 +81,7 @@ jobs:
       - name: Publish Release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.NET_CORE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CE100_HW3_ALGO }}
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
@@ -94,7 +94,7 @@ jobs:
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.NET_CORE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CE100_HW3_ALGO }}
         with:
           upload_url: ${{ steps.publish.outputs.upload_url }}
           asset_path: ${{ env.ARTIFACTS_DIR }}/ce100-hw3-algo-lib-cs.dll

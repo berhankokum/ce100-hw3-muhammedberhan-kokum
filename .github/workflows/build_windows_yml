@@ -125,7 +125,7 @@ jobs:
         id: create_common_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.NET_CORE_TEMPLATE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CE100_HW3_ALGO }}
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
@@ -154,7 +154,7 @@ jobs:
           asset_name: windows-binaries.tar.gz
           asset_content_type: application/gzip
         env:
-          GITHUB_TOKEN: ${{ secrets.NET_CORE_TEMPLATE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CE100_HW3_ALGO }}
 
       - name: Upload Test Converage HTML Report to release asset
         uses: actions/upload-release-asset@v1
@@ -164,7 +164,7 @@ jobs:
           asset_name: test-coverage-html.tar.gz
           asset_content_type: application/gzip
         env:
-          GITHUB_TOKEN: ${{ secrets.NET_CORE_TEMPLATE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CE100_HW3_ALGO }}
           
           
       - name: Upload Doxygen Output to release asset
@@ -175,4 +175,4 @@ jobs:
           asset_name: doxygen-output-html-xml-latex.tar.gz
           asset_content_type: application/gzip
         env:
-          GITHUB_TOKEN: ${{ secrets.NET_CORE_TEMPLATE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CE100_HW3_ALGO }}
