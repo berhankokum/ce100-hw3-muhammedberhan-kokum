@@ -887,5 +887,412 @@ namespace ce100_hw3_algo_lib_cs
         }
 
     }
+    /**
+         * Entries that define a tree
+         */
+    public class Tree
+    {
+        /**
+         * Id of the tree entering the input
+         * */
+        public int Id { get; set; }
+
+        /**
+         * input showing the location of the tree on the X-axis
+         */
+        public double X { get; set; }
+
+        /**
+        * input showing the location of the tree on the Y-axis
+        */
+        public double Y { get; set; }
+    }
+
+
+    /**
+    * class representing an edge between two trees     
+    */
+    public class EdgePS
+    {
+
+
+        /**
+         *Source tree located on the edge
+         */
+        public Tree Source { get; set; }
+
+        /**
+         *Target tree located on the edge
+         */
+        public Tree Destination { get; set; }
+
+        /**
+         *Input containing the distance between the target and source tree
+         */
+        public double Distance { get; set; }
+    }
+
+
+    /**
+     * Represents a system that connects trees
+     */
+    public class PipelineSystem
+
+    {
+        /**
+        *Keeps a list of trees in the system
+        */
+        private List<Tree> _trees;
+
+        /**
+        * A list of links between trees in the system
+        */
+        private List<EdgePS> _edges;
+
+
+        /**
+         * Runs a piplinesystem instance with the given number of trees
+         */
+        public PipelineSystem(int numberOfTrees)
+        {
+
+            _trees = new List<Tree>();
+            _edges = new List<EdgePS>();
+
+            /**generates the positions of trees in random shapes*/
+            GenerateRandomTreeLocations(numberOfTrees);
+
+            /**makes connections between randomly positioned trees*/
+            BuildConnections();
+        }
+
+        /*
+         * randomly generates the locations of the specified number of trees
+         * 
+         * @param numberOfTrees number of trees to generate random location
+         * */
+        private void GenerateRandomTreeLocations(int numberOfTrees)
+        {
+            /**
+            *creates a new random object
+            */
+            Random random = new Random();
+
+
+            /*
+             * A for loop that sets random locations for each tree
+             * */
+            for (int i = 0; i < numberOfTrees; i++)
+            {
+                _trees.Add(new Tree
+                {
+                    Id = i,
+                    X = random.NextDouble() * 100,
+                    Y = random.NextDouble() * 100
+                });
+            }
+        }
+
+        /**
+         * makes connections between randomly positioned trees
+         */
+        private void BuildConnections()
+        {
+            /**
+             * Calculate the distance between two trees
+             */
+            for (int i = 0; i < _trees.Count; i++)
+            {
+                for (int j = i + 1; j < _trees.Count; j++)
+                {
+                    // Calculate the distance between two trees
+                    double distance = Math.Sqrt(Math.Pow(_trees[i].X - _trees[j].X, 2) + Math.Pow(_trees[i].Y - _trees[j].Y, 2));
+                    // Add an EdgePS object containing this distance to the _edges list
+                    _edges.Add(new EdgePS
+                    {
+                        Source = _trees[i],
+                        Destination = _trees[j],
+                        Distance = distance
+                    });
+                }
+            }
+        }
+
+        /**
+         * Finds the minimum spanning tree (MST) of the system using Kruskal's algorithm.
+         * @returns  A list of edges representing the MST.
+         */
+        public List<EdgePS> KruskalMST()
+        {
+            // creates a list of edges of the MST
+            List<EdgePS> mstEdges = new List<EdgePS>();
+            // Creates the DisjointSet object
+            DisjointSet disjointSet = new DisjointSet(_trees.Count);
+
+            /**
+             * Code sequence that sorts edges by distance
+             */
+            _edges.Sort((e1, e2) => e1.Distance.CompareTo(e2.Distance));
+
+            foreach (EdgePS edge in _edges)
+            {
+                // Finds the roots of source and target trees
+                int root1 = disjointSet.Find(edge.Source.Id);
+                int root2 = disjointSet.Find(edge.Destination.Id);
+
+                //If the value roots are different from each other in the for loop 
+                if (root1 != root2)
+                {
+                    // Adds edge to MST
+                    mstEdges.Add(edge);
+                    // Combines roots
+                    disjointSet.Union(root1, root2);
+                }
+            }
+            // Returns the list of edges of the MST
+            return mstEdges;
+        }
+
+        /**
+        *  Returns textual descriptions of the edges of the minimum spanning tree (MST).
+        * @param mstEdges List of edges in MST.
+        * @returns A list of textual descriptions of edges in the MST.
+        */
+        public List<string> GetMSTEdgesTextualDescriptions(List<EdgePS> mstEdges)
+        {
+            // Creates a list of textual descriptions
+            List<string> descriptions = new List<string>();
+            // Creates a textual description for each edge and adds it to the list
+
+            foreach (EdgePS edge in mstEdges)
+            {
+                // Creates a textual description of the edge and adds it to the list
+                descriptions.Add($"Tree {edge.Source.Id} ({edge.Source.X}, {edge.Source.Y}) -> Tree {edge.Destination.Id} ({edge.Destination.X}, {edge.Destination.Y}): {edge.Distance}");
+            }
+            // Returns a list of textual descriptions
+            return descriptions;
+        }
+    }
+
+    /**
+     * Cod array representing a discrete data structure
+     */
+    public class DisjointSet
+    {
+        private int[] _parent;
+        private int[] _rank;
+
+        /**
+         * Prompts to instantiate a new instance of the DisjoinSet class with the desired size
+         * @param size holds the size of the disjoint set
+         */
+        public DisjointSet(int size)
+        {
+            /**
+             * creates _parent and _rank arrays of the specified size
+             */
+            _parent = new int[size];
+            _rank = new int[size];
+            /**
+             * Sets the root of each element equal to itself and sets its rank to 0
+             */
+            for (int i = 0; i < size; i++)
+            {
+                _parent[i] = i;
+                _rank[i] = 0;
+            }
+        }
+
+
+        /**
+         * Allows to find the root of the desired element
+         * @param x is the element whose root will be found
+         * @returns  root of the specified element
+         */
+        public int Find(int x)
+        {
+            if (_parent[x] != x)
+            {
+                _parent[x] = Find(_parent[x]);
+            }
+
+            return _parent[x];
+        }
+
+
+        /**
+         * code sequence combining the roots of two elements
+         * @param x first element to be merged
+         * @param y second element to be merged
+         */
+        public void Union(int x, int y)
+        {
+            /**
+             * Finds the roots of the first and second element
+             */
+            int rootX = Find(x);
+            int rootY = Find(y);
+            /**
+             * no concatenation if the two roots have the same value
+             */
+            if (rootX == rootY)
+            {
+                return;
+            }
+
+            /**
+             * If the rank of the first element is greater than the second, equals the root of the second to the first
+             */
+            if (_rank[rootX] > _rank[rootY])
+            {
+                _parent[rootY] = rootX;
+            }
+            /**
+             * If the rank of the first element is less than the second, equals the root of the first to the second
+             */
+            else if (_rank[rootX] < _rank[rootY])
+            {
+                _parent[rootX] = rootY;
+            }
+            /**
+             * If the ranks are equal, equals the root of the second to the first and increases the rank of the first
+             */
+            else
+            {
+                _parent[rootY] = rootX;
+                _rank[rootX]++;
+            }
+        }
+
+    }
+
+    /** @brief Using the Bellman-Ford algorithm to find the shortest paths from a source origin node to all other nodes in a graph
+     *  @param edges is the list of edges in the graph
+     *  @param verticesCount keeps the number of nodes in the graph
+     *  @param source  source node used to find the shortest path
+     *  @return sequence of distances from the source node to all other nodes in the graph
+    */
+    public class Edge
+    {
+        /** @brief Source vertex of the edge
+        */
+        public int Source { get; set; }
+
+        /** @brief Destination vertex of the edge
+     */
+        public int Destination { get; set; }
+
+        /** @brief Weight of the edge
+     */
+        public int Weight { get; set; }
+
+        /** @brief Constructor for Edge class
+    *  @param source Source vertex of the edge
+    *  @param destination Destination vertex of the edge
+    *  @param weight Weight of the edge
+    */
+        public Edge(int source, int destination, int weight)
+        {
+            Source = source;
+            Destination = destination;
+            Weight = weight;
+        }
+    }
+
+
+    /** @brief BellmanFord sınıfı, applies the Bellman-Ford algorithm to find the shortest path in a graph
+     */
+    public class BellmanFord
+    {
+        private const int INF = int.MaxValue;
+
+        public static int[] FindShortestPath(List<Edge> edges, int verticesCount, int source)
+        {
+            /**Initialize the distances array to store the shortest distances from the source node to all other nodes
+             */
+            int[] distances = new int[verticesCount];
+            for (int i = 0; i < verticesCount; i++)
+            {
+                /**sets start distances to infinity
+                 */
+                distances[i] = INF;
+            }
+            /**
+             * sets the distance from the source node to itself to 0
+             */
+            distances[source] = 0;
+
+            /**
+             * traverse all nodes (except source nodes) and if a shorter path is found, select that distance 
+             */
+            for (int i = 1; i < verticesCount; i++)
+            {
+                /**
+             * traverse all nodes  and if a shorter path is found, select that distance 
+             */
+                foreach (Edge edge in edges)
+                {
+                    /** gets the source node of the edge
+            */
+                    int u = edge.Source;
+
+                    /**
+                     * gets the target node of the edge
+                     */
+                    int v = edge.Destination;
+
+                    /**
+                     * takes the weight of the edge
+                     */
+                    int weight = edge.Weight;
+
+
+                    /**
+                     * If the distance from the source node to node u is not infinite and the distance from node u to node v over this edge is shorter than the current distance from the source node to node v
+                     */
+                    if (distances[u] != INF && distances[u] + weight < distances[v])
+                    {
+                        /**
+                         * update the distance from the source node to node v
+                         */
+                        distances[v] = distances[u] + weight;
+                    }
+                }
+            }
+
+            /**
+             * Iterate through all edges in the graph and check for negative-weight cycle
+             */
+            foreach (Edge edge in edges)
+            {
+                /** @brief Source vertex of the edge
+     */
+                int u = edge.Source;
+                /** @brief Destination vertex of the edge
+     */
+                int v = edge.Destination;
+                /** @brief Weight of the edge
+     */
+                int weight = edge.Weight;
+
+
+                /**
+                 * If distance from source vertex to vertex u is not infinity and distance from vertex u to vertex v through this edge is shorter than current distance from source vertex to vertex v
+                 */
+                if (distances[u] != INF && distances[u] + weight < distances[v])
+                {
+                    /**
+                     * Throw exception indicating presence of negative-weight cycle
+                     */
+                    throw new InvalidOperationException("Graph contains a negative-weight cycle");
+                }
+            }
+            /**
+             * Return array of shortest distances from source vertex to all other vertices in the graph
+             */
+            return distances;
+
+        }
+    }
 }
 

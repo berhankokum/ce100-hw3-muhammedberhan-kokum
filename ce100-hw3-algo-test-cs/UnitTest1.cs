@@ -139,20 +139,124 @@ namespace ce100_hw3_algo_test_cs
             return fileInfo.Length;
         }
 
+        /**
+        * brief TestPipelineSystem Method
+        *
+        * This method is an xunit test for the PipelineSystem class
+        * Finds the minimum inclusive path for irrigation of trees using Kruskal's algorithm.
+        * Checks the correctness of the number of edges in the tree and does its task by writing textual descriptions of the edges
+         */
+        [Fact]
+        public void TestPipelineSystem()
+        {
+            /**
+             * determines how many trees there will be
+             */
+            int numberOfTrees = 10;
 
-  /**
-   *  This class includes Xunit testing for the Bellman Ford algorithm
-   */
+
+            /**
+            * Creates the PipelineSystem object
+            */
+            PipelineSystem pipelineSystem = new PipelineSystem(numberOfTrees);
+
+
+
+            /**
+             * Find the minimum spanning tree using Kruskal's algorithm
+            */
+            List<ce100_hw3_algo_lib_cs.EdgePS> mstEdges = pipelineSystem.KruskalMST();
+
+            /**
+             * checks that the number of edges in the tree is correct
+             */
+            Assert.Equal(numberOfTrees - 1, mstEdges.Count);
+
+
+            /**
+             * code sequence that receives textual descriptions of edges
+             */
+            List<string> edgeDescriptions = pipelineSystem.GetMSTEdgesTextualDescriptions(mstEdges);
+
+
+            /**
+             * checks the accuracy of the number of comments
+             */
+            Assert.Equal(numberOfTrees - 1, edgeDescriptions.Count);
+
+            /**
+             * Prints textual descriptions of edges
+             */
+            foreach (string edgeDescription in edgeDescriptions)
+            {
+                Console.WriteLine(edgeDescription);
+            }
+
+        }
+        /**
+           * This class includes Xunit testing for the Bellman Ford algorithm
+           */
         private readonly ITestOutputHelper _output;
 
         /**
-        * @brief this constructor receives an ITestOutputHelper object
-        * @param output ITestOutputHelper Uses  to print test outputs
-        */
+     * @brief this constructor receives an ITestOutputHelper object
+     * @param output ITestOutputHelper Uses  to print test outputs
+     */
         public UnitTest1(ITestOutputHelper output)
         {
             _output = output;
         }
+
+
+        /**
+         * @brief This test checks whether the BellmanFord.FindShortestPath method returns correct results
+         */
+        [Fact]
+        public void TestFindShortestPath()
+        {
+            /** @brief create and launch a new instance of Stopwatch */
+
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+
+            /** @brief Generate a list of edges representing a graph with negative edge weights */
+            List<Edge> edges = new List<Edge>
+            {
+                new Edge(0, 1, -1),
+                new Edge(0, 2, 4),
+                new Edge(1, 2, 3),
+                new Edge(1, 3, 2),
+                new Edge(1, 4, 2),
+                new Edge(3, 1, 1),
+                new Edge(3, 2, 5),
+                new Edge(4, 3, -3)
+            };
+            /** @brief Set number of vertices and source vertex */
+            int verticesCount = 5;
+            int source = 0;
+
+            /** @brief Set expected shortest distances from the source vertex to all other vertices */
+            int[] expectedDistances = { 0, -1, 2, -2, 1 };
+            /** @brief Find the shortest distances from the source vertex using the Bellman-Ford algorithm */
+            int[] actualDistances = BellmanFord.FindShortestPath(edges, verticesCount, source);
+
+            /** @brief FindShortestPath check that the method returns the expected shortest distances */
+
+            Assert.Equal(expectedDistances, actualDistances);
+
+            /** @brief Stop Stopwatch and write the elapsed time to the output */
+            stopwatch.Stop();
+            _output.WriteLine($"Time elapsed: {stopwatch.Elapsed}");
+
+            /** @brief Get the total memory used and write it to the output */
+            long memoryUsed = GC.GetTotalMemory(true);
+            _output.WriteLine($"Memory used: {memoryUsed}");
+        }
+
+
     }
+
+
 }
+
 
