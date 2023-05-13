@@ -1,0 +1,140 @@
+\hypertarget{a00061}{}\doxysection{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set Class Reference}
+\label{a00061}\index{ce100\_hw3\_algo\_lib\_cs.DisjointSet@{ce100\_hw3\_algo\_lib\_cs.DisjointSet}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00061_a5d7c75c309fa75a6512fc5dfc93edf80}{Disjoint\+Set}} (int size)
+\item 
+int \mbox{\hyperlink{a00061_ab0ce59644f20a8797859aa81b476091d}{Find}} (int x)
+\item 
+void \mbox{\hyperlink{a00061_ac614ef2b43283a2d38e500463c32ae60}{Union}} (int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{a00061_a3fc86346d7b8082cf76337701dc800c9}{\+\_\+parent}}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{a00061_ab33a7aa9376b8a97cb882dcb243c90b3}{\+\_\+rank}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cod array representing a discrete data structure 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00061_a5d7c75c309fa75a6512fc5dfc93edf80}\label{a00061_a5d7c75c309fa75a6512fc5dfc93edf80}} 
+\index{ce100\_hw3\_algo\_lib\_cs.DisjointSet@{ce100\_hw3\_algo\_lib\_cs.DisjointSet}!DisjointSet@{DisjointSet}}
+\index{DisjointSet@{DisjointSet}!ce100\_hw3\_algo\_lib\_cs.DisjointSet@{ce100\_hw3\_algo\_lib\_cs.DisjointSet}}
+\doxysubsubsection{\texorpdfstring{DisjointSet()}{DisjointSet()}}
+{\footnotesize\ttfamily ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+Disjoint\+Set (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prompts to instantiate a new instance of the Disjoin\+Set class with the desired size 
+\begin{DoxyParams}{Parameters}
+{\em size} & holds the size of the disjoint set \\
+\hline
+\end{DoxyParams}
+creates \+\_\+parent and \+\_\+rank arrays of the specified size
+
+Sets the root of each element equal to itself and sets its rank to 0
+
+References \mbox{\hyperlink{a00061_a3fc86346d7b8082cf76337701dc800c9}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+\_\+parent}}, and \mbox{\hyperlink{a00061_ab33a7aa9376b8a97cb882dcb243c90b3}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+\_\+rank}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00061_ab0ce59644f20a8797859aa81b476091d}\label{a00061_ab0ce59644f20a8797859aa81b476091d}} 
+\index{ce100\_hw3\_algo\_lib\_cs.DisjointSet@{ce100\_hw3\_algo\_lib\_cs.DisjointSet}!Find@{Find}}
+\index{Find@{Find}!ce100\_hw3\_algo\_lib\_cs.DisjointSet@{ce100\_hw3\_algo\_lib\_cs.DisjointSet}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily int ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+Find (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Allows to find the root of the desired element 
+\begin{DoxyParams}{Parameters}
+{\em x} & is the element whose root will be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+root of the specified element 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{a00061_a3fc86346d7b8082cf76337701dc800c9}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+\_\+parent}}, and \mbox{\hyperlink{a00061_ab0ce59644f20a8797859aa81b476091d}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+Find()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00061_ab0ce59644f20a8797859aa81b476091d}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+Find()}}, and \mbox{\hyperlink{a00061_ac614ef2b43283a2d38e500463c32ae60}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+Union()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{d4/de8/a00061_ab0ce59644f20a8797859aa81b476091d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{d4/de8/a00061_ab0ce59644f20a8797859aa81b476091d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00061_ac614ef2b43283a2d38e500463c32ae60}\label{a00061_ac614ef2b43283a2d38e500463c32ae60}} 
+\index{ce100\_hw3\_algo\_lib\_cs.DisjointSet@{ce100\_hw3\_algo\_lib\_cs.DisjointSet}!Union@{Union}}
+\index{Union@{Union}!ce100\_hw3\_algo\_lib\_cs.DisjointSet@{ce100\_hw3\_algo\_lib\_cs.DisjointSet}}
+\doxysubsubsection{\texorpdfstring{Union()}{Union()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+Union (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+code sequence combining the roots of two elements 
+\begin{DoxyParams}{Parameters}
+{\em x} & first element to be merged \\
+\hline
+{\em y} & second element to be merged \\
+\hline
+\end{DoxyParams}
+Finds the roots of the first and second element
+
+no concatenation if the two roots have the same value
+
+If the rank of the first element is greater than the second, equals the root of the second to the first
+
+If the rank of the first element is less than the second, equals the root of the first to the second
+
+If the ranks are equal, equals the root of the second to the first and increases the rank of the first
+
+References \mbox{\hyperlink{a00061_a3fc86346d7b8082cf76337701dc800c9}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+\_\+parent}}, \mbox{\hyperlink{a00061_ab33a7aa9376b8a97cb882dcb243c90b3}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+\_\+rank}}, and \mbox{\hyperlink{a00061_ab0ce59644f20a8797859aa81b476091d}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+Find()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{d4/de8/a00061_ac614ef2b43283a2d38e500463c32ae60_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{a00061_a3fc86346d7b8082cf76337701dc800c9}\label{a00061_a3fc86346d7b8082cf76337701dc800c9}} 
+\index{ce100\_hw3\_algo\_lib\_cs.DisjointSet@{ce100\_hw3\_algo\_lib\_cs.DisjointSet}!\_parent@{\_parent}}
+\index{\_parent@{\_parent}!ce100\_hw3\_algo\_lib\_cs.DisjointSet@{ce100\_hw3\_algo\_lib\_cs.DisjointSet}}
+\doxysubsubsection{\texorpdfstring{\_parent}{\_parent}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+\_\+parent\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00061_a5d7c75c309fa75a6512fc5dfc93edf80}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+Disjoint\+Set()}}, \mbox{\hyperlink{a00061_ab0ce59644f20a8797859aa81b476091d}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+Find()}}, and \mbox{\hyperlink{a00061_ac614ef2b43283a2d38e500463c32ae60}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+Union()}}.
+
+\mbox{\Hypertarget{a00061_ab33a7aa9376b8a97cb882dcb243c90b3}\label{a00061_ab33a7aa9376b8a97cb882dcb243c90b3}} 
+\index{ce100\_hw3\_algo\_lib\_cs.DisjointSet@{ce100\_hw3\_algo\_lib\_cs.DisjointSet}!\_rank@{\_rank}}
+\index{\_rank@{\_rank}!ce100\_hw3\_algo\_lib\_cs.DisjointSet@{ce100\_hw3\_algo\_lib\_cs.DisjointSet}}
+\doxysubsubsection{\texorpdfstring{\_rank}{\_rank}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+\_\+rank\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00061_a5d7c75c309fa75a6512fc5dfc93edf80}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+Disjoint\+Set()}}, and \mbox{\hyperlink{a00061_ac614ef2b43283a2d38e500463c32ae60}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Disjoint\+Set.\+Union()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce100-\/hw3-\/algo-\/lib-\/cs/\mbox{\hyperlink{a00002}{Class1.\+cs}}\end{DoxyCompactItemize}

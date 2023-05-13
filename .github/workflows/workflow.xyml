@@ -1,0 +1,92 @@
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '7.0.x'
+        
+    - name: Restore dependencies
+      run: dotnet restore
+      working-directory: ./ce100-hw3-algo-test-cs
+      
+    - name: Install coverlet.msbuild
+      run: dotnet add package coverlet.msbuild --version 3.1.0
+      working-directory: ./ce100-hw3-algo-test-cs
+      
+    - name: Build
+      run: dotnet build --configuration Release
+      working-directory: ./ce100-hw3-algo-test-cs
+      
+#    - name: Test
+#      run: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+#      working-directory: ./ce100-hw3-algo-test-cs
+      
+    - name: Test
+      shell: cmd
+      run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
+      working-directory: ./ce100-hw3-algo-test-cs
+      
+    - name: Generate Coverage Report
+      run: reportgenerator "-reports:**/coverage.cobertura.xml" "-targetdir:coveragereport" -reporttypes:Html
+      
+    - name: Generate Doxygen HTML Report
+      uses: mattnotmitt/doxygen-action@v1.9.5
+      with:
+          doxyfile-path: 'Doxygen'
+      
+    - name: Compress Doxygen HTML Report
+      run: tar -czvf doxygen-report.tar.gz html
+      
+    - name: Publish
+      run: dotnet publish --configuration Release --output publish
+      
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.NET_CORE_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: |
+          Changes in this release:
+          - Added support for basic arithmetic operations
+        draft: false
+        prerelease: false
+      
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.NET_CORE_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./publish/ce100-hw3-algo-lib-cs.dll
+        asset_name: ce100-hw3-algo-lib-cs.dll
+        asset_content_type: application/octet-stream
+      
+    - name: Upload Coverage Report
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage-report
+        path: coveragereport
+      
+    - name: Upload Doxygen HTML Report
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.NET_CORE_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./doxygen-report.tar.gz
+        asset_name: doxygen-report.tar.gz
+        asset_content_type: application/x-gzip

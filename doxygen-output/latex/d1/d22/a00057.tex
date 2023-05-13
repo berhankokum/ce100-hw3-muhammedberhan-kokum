@@ -1,0 +1,150 @@
+\hypertarget{a00057}{}\doxysection{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System Class Reference}
+\label{a00057}\index{ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00057_a5cfaed54f44f4e8280f6b8df30c4ee79}{Pipeline\+System}} (int number\+Of\+Trees)
+\item 
+List$<$ \mbox{\hyperlink{a00053}{Edge\+PS}} $>$ \mbox{\hyperlink{a00057_acff01ed5858e4954bbe8f9f6cfcff598}{Kruskal\+MST}} ()
+\item 
+List$<$ string $>$ \mbox{\hyperlink{a00057_abef4d6bf1ea9bd29c9a2b46c9caeef58}{Get\+MSTEdges\+Textual\+Descriptions}} (List$<$ \mbox{\hyperlink{a00053}{Edge\+PS}} $>$ mst\+Edges)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00057_ab4391bbc5c3f03e24077cde986e2ecde}{Generate\+Random\+Tree\+Locations}} (int number\+Of\+Trees)
+\item 
+void \mbox{\hyperlink{a00057_aa83df91e897b1023c6b4be5e07e1c4e4}{Build\+Connections}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{a00049}{Tree}} $>$ \mbox{\hyperlink{a00057_aa2d966eeb9c9ba65688966df180a5feb}{\+\_\+trees}}
+\item 
+List$<$ \mbox{\hyperlink{a00053}{Edge\+PS}} $>$ \mbox{\hyperlink{a00057_a24a6119b9dacf1d2cfcccd8fd1f43763}{\+\_\+edges}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a system that connects trees 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00057_a5cfaed54f44f4e8280f6b8df30c4ee79}\label{a00057_a5cfaed54f44f4e8280f6b8df30c4ee79}} 
+\index{ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}!PipelineSystem@{PipelineSystem}}
+\index{PipelineSystem@{PipelineSystem}!ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}}
+\doxysubsubsection{\texorpdfstring{PipelineSystem()}{PipelineSystem()}}
+{\footnotesize\ttfamily ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Pipeline\+System (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Trees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Runs a piplinesystem instance with the given number of trees generates the positions of trees in random shapes
+
+makes connections between randomly positioned trees
+
+References \mbox{\hyperlink{a00057_a24a6119b9dacf1d2cfcccd8fd1f43763}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+\_\+edges}}, \mbox{\hyperlink{a00057_aa2d966eeb9c9ba65688966df180a5feb}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+\_\+trees}}, \mbox{\hyperlink{a00057_aa83df91e897b1023c6b4be5e07e1c4e4}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Build\+Connections()}}, and \mbox{\hyperlink{a00057_ab4391bbc5c3f03e24077cde986e2ecde}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Generate\+Random\+Tree\+Locations()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d22/a00057_a5cfaed54f44f4e8280f6b8df30c4ee79_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00057_aa83df91e897b1023c6b4be5e07e1c4e4}\label{a00057_aa83df91e897b1023c6b4be5e07e1c4e4}} 
+\index{ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}!BuildConnections@{BuildConnections}}
+\index{BuildConnections@{BuildConnections}!ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}}
+\doxysubsubsection{\texorpdfstring{BuildConnections()}{BuildConnections()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Build\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+makes connections between randomly positioned trees Calculate the distance between two trees
+
+References \mbox{\hyperlink{a00057_a24a6119b9dacf1d2cfcccd8fd1f43763}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+\_\+edges}}, and \mbox{\hyperlink{a00057_aa2d966eeb9c9ba65688966df180a5feb}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+\_\+trees}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00057_a5cfaed54f44f4e8280f6b8df30c4ee79}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Pipeline\+System()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d22/a00057_aa83df91e897b1023c6b4be5e07e1c4e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00057_ab4391bbc5c3f03e24077cde986e2ecde}\label{a00057_ab4391bbc5c3f03e24077cde986e2ecde}} 
+\index{ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}!GenerateRandomTreeLocations@{GenerateRandomTreeLocations}}
+\index{GenerateRandomTreeLocations@{GenerateRandomTreeLocations}!ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}}
+\doxysubsubsection{\texorpdfstring{GenerateRandomTreeLocations()}{GenerateRandomTreeLocations()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Generate\+Random\+Tree\+Locations (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Trees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+creates a new random object
+
+References \mbox{\hyperlink{a00057_aa2d966eeb9c9ba65688966df180a5feb}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+\_\+trees}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00057_a5cfaed54f44f4e8280f6b8df30c4ee79}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Pipeline\+System()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d22/a00057_ab4391bbc5c3f03e24077cde986e2ecde_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00057_abef4d6bf1ea9bd29c9a2b46c9caeef58}\label{a00057_abef4d6bf1ea9bd29c9a2b46c9caeef58}} 
+\index{ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}!GetMSTEdgesTextualDescriptions@{GetMSTEdgesTextualDescriptions}}
+\index{GetMSTEdgesTextualDescriptions@{GetMSTEdgesTextualDescriptions}!ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}}
+\doxysubsubsection{\texorpdfstring{GetMSTEdgesTextualDescriptions()}{GetMSTEdgesTextualDescriptions()}}
+{\footnotesize\ttfamily List$<$ string $>$ ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Get\+MSTEdges\+Textual\+Descriptions (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{a00053}{Edge\+PS}} $>$}]{mst\+Edges }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns textual descriptions of the edges of the minimum spanning tree (MST). 
+\begin{DoxyParams}{Parameters}
+{\em mst\+Edges} & List of edges in MST. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of textual descriptions of edges in the MST. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{a00057_acff01ed5858e4954bbe8f9f6cfcff598}\label{a00057_acff01ed5858e4954bbe8f9f6cfcff598}} 
+\index{ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}!KruskalMST@{KruskalMST}}
+\index{KruskalMST@{KruskalMST}!ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}}
+\doxysubsubsection{\texorpdfstring{KruskalMST()}{KruskalMST()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{a00053}{Edge\+PS}} $>$ ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Kruskal\+MST (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Finds the minimum spanning tree (MST) of the system using Kruskal\textquotesingle{}s algorithm. \begin{DoxyReturn}{Returns}
+A list of edges representing the MST. 
+\end{DoxyReturn}
+Code sequence that sorts edges by distance
+
+References \mbox{\hyperlink{a00057_a24a6119b9dacf1d2cfcccd8fd1f43763}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+\_\+edges}}, \mbox{\hyperlink{a00057_aa2d966eeb9c9ba65688966df180a5feb}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+\_\+trees}}, \mbox{\hyperlink{a00053_af989289f774201445acf5bc12f5b9d3d}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Edge\+PS.\+Destination}}, \mbox{\hyperlink{a00049_a3cae17d4f9fe6106026348392a7d3183}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Tree.\+Id}}, and \mbox{\hyperlink{a00053_a8e3fb796c0827883e2fabc37d2a02d36}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Edge\+PS.\+Source}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{a00057_a24a6119b9dacf1d2cfcccd8fd1f43763}\label{a00057_a24a6119b9dacf1d2cfcccd8fd1f43763}} 
+\index{ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}!\_edges@{\_edges}}
+\index{\_edges@{\_edges}!ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}}
+\doxysubsubsection{\texorpdfstring{\_edges}{\_edges}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{a00053}{Edge\+PS}}$>$ ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+\_\+edges\hspace{0.3cm}{\ttfamily [private]}}
+
+A list of links between trees in the system 
+
+Referenced by \mbox{\hyperlink{a00057_aa83df91e897b1023c6b4be5e07e1c4e4}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Build\+Connections()}}, \mbox{\hyperlink{a00057_acff01ed5858e4954bbe8f9f6cfcff598}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Kruskal\+MST()}}, and \mbox{\hyperlink{a00057_a5cfaed54f44f4e8280f6b8df30c4ee79}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Pipeline\+System()}}.
+
+\mbox{\Hypertarget{a00057_aa2d966eeb9c9ba65688966df180a5feb}\label{a00057_aa2d966eeb9c9ba65688966df180a5feb}} 
+\index{ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}!\_trees@{\_trees}}
+\index{\_trees@{\_trees}!ce100\_hw3\_algo\_lib\_cs.PipelineSystem@{ce100\_hw3\_algo\_lib\_cs.PipelineSystem}}
+\doxysubsubsection{\texorpdfstring{\_trees}{\_trees}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{a00049}{Tree}}$>$ ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+\_\+trees\hspace{0.3cm}{\ttfamily [private]}}
+
+Keeps a list of trees in the system 
+
+Referenced by \mbox{\hyperlink{a00057_aa83df91e897b1023c6b4be5e07e1c4e4}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Build\+Connections()}}, \mbox{\hyperlink{a00057_ab4391bbc5c3f03e24077cde986e2ecde}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Generate\+Random\+Tree\+Locations()}}, \mbox{\hyperlink{a00057_acff01ed5858e4954bbe8f9f6cfcff598}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Kruskal\+MST()}}, and \mbox{\hyperlink{a00057_a5cfaed54f44f4e8280f6b8df30c4ee79}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Pipeline\+System.\+Pipeline\+System()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce100-\/hw3-\/algo-\/lib-\/cs/\mbox{\hyperlink{a00002}{Class1.\+cs}}\end{DoxyCompactItemize}

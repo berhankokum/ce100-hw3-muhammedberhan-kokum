@@ -1,0 +1,230 @@
+\hypertarget{a00045}{}\doxysection{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide Class Reference}
+\label{a00045}\index{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide@{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00045_ac6bbbcb86886be534ad02a240dc3df4b}{Ikea\+Assembly\+Guide}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the Ikea\+Assembly\+Guide class. It initializes the list of assembly steps. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Add Assembly Step}\par
+{\em Add\+Assembly\+Step Method
+
+Method to add an assembly step to the guide. It takes a step ID, a description, and a list of dependencies as arguments.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}step\+Id,description,dependencies int, string,List$<$int$>$\mbox{]} Add Assembly Step \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00045_a4a9c173fe0505b03a6b1f96990353008}{Add\+Assembly\+Step}} (int step\+Id, string description, List$<$ int $>$ dependencies)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Topological Sort}\par
+{\em Topological\+Sort Method
+
+Method to add an assembly step to the guide. It takes a step ID, a description, and a list of dependencies as arguments.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}\mbox{]} Topological Sort \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+List$<$ int $>$ \mbox{\hyperlink{a00045_a7015a8adb8988aba828d74572ad2aa53}{Topological\+Sort}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Get Assembly Steps Text}\par
+{\em Get\+Assembly\+Steps\+Text Method
+
+This method is to get the assembly steps in a proper order (based on their dependencies) in a text format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}\mbox{]} Get Assembly Steps Text \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{a00045_a8d6301bf71ec31399902316ef4574daa}{Get\+Assembly\+Steps\+Text}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Private Member Functions}
+\begin{Indent}\textbf{ DFS}\par
+{\em DFS Method
+
+This is a private helper method to perform a depth-\/first search (DFS) from a given step ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}step\+Id,visited,sorted\+Stack,step\+Dict int, Hash\+Set$<$int$>$,Stack$<$int$>$,Dictionary$<$int, Assembly\+Step$>$\mbox{]} DFS \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00045_a846d57fb7f2cb6b0d4d1f089da24c20b}{DFS}} (int step\+Id, Hash\+Set$<$ int $>$ visited, Stack$<$ int $>$ sorted\+Stack, Dictionary$<$ int, \mbox{\hyperlink{a00041}{Assembly\+Step}} $>$ step\+Dict)
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{a00041}{Assembly\+Step}} $>$ \mbox{\hyperlink{a00045_aaf883e2738ea2b5e1d86780e6dd6a51c}{assembly\+Steps}}
+\begin{DoxyCompactList}\small\item\em Define a private list of Assembly\+Step objects. This will hold all the assembly steps in the guide. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00045_ac6bbbcb86886be534ad02a240dc3df4b}\label{a00045_ac6bbbcb86886be534ad02a240dc3df4b}} 
+\index{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide@{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide}!IkeaAssemblyGuide@{IkeaAssemblyGuide}}
+\index{IkeaAssemblyGuide@{IkeaAssemblyGuide}!ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide@{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide}}
+\doxysubsubsection{\texorpdfstring{IkeaAssemblyGuide()}{IkeaAssemblyGuide()}}
+{\footnotesize\ttfamily ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+Ikea\+Assembly\+Guide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the Ikea\+Assembly\+Guide class. It initializes the list of assembly steps. 
+
+Initialize the list of assembly steps.
+
+References \mbox{\hyperlink{a00045_aaf883e2738ea2b5e1d86780e6dd6a51c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+assembly\+Steps}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00045_a4a9c173fe0505b03a6b1f96990353008}\label{a00045_a4a9c173fe0505b03a6b1f96990353008}} 
+\index{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide@{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide}!AddAssemblyStep@{AddAssemblyStep}}
+\index{AddAssemblyStep@{AddAssemblyStep}!ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide@{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide}}
+\doxysubsubsection{\texorpdfstring{AddAssemblyStep()}{AddAssemblyStep()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+Add\+Assembly\+Step (\begin{DoxyParamCaption}\item[{int}]{step\+Id,  }\item[{string}]{description,  }\item[{List$<$ int $>$}]{dependencies }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new Assembly\+Step object with the provided arguments.
+
+Add the new assembly step to the list of assembly steps.
+
+References \mbox{\hyperlink{a00045_aaf883e2738ea2b5e1d86780e6dd6a51c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+assembly\+Steps}}.
+
+\mbox{\Hypertarget{a00045_a846d57fb7f2cb6b0d4d1f089da24c20b}\label{a00045_a846d57fb7f2cb6b0d4d1f089da24c20b}} 
+\index{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide@{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide}!DFS@{DFS}}
+\index{DFS@{DFS}!ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide@{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide}}
+\doxysubsubsection{\texorpdfstring{DFS()}{DFS()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+DFS (\begin{DoxyParamCaption}\item[{int}]{step\+Id,  }\item[{Hash\+Set$<$ int $>$}]{visited,  }\item[{Stack$<$ int $>$}]{sorted\+Stack,  }\item[{Dictionary$<$ int, \mbox{\hyperlink{a00041}{Assembly\+Step}} $>$}]{step\+Dict }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Add the current step ID to the set of visited steps.
+
+Get the current step from the dictionary using the step ID.
+
+Iterate over each dependency of the current step.
+
+If a dependency has not been visited, perform a DFS from that dependency.
+
+After visiting all dependencies of the current step, add the current step ID to the stack.
+
+References \mbox{\hyperlink{a00045_a846d57fb7f2cb6b0d4d1f089da24c20b}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+DFS()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00045_a846d57fb7f2cb6b0d4d1f089da24c20b}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+DFS()}}, and \mbox{\hyperlink{a00045_a7015a8adb8988aba828d74572ad2aa53}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+Topological\+Sort()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{d6/d97/a00045_a846d57fb7f2cb6b0d4d1f089da24c20b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d97/a00045_a846d57fb7f2cb6b0d4d1f089da24c20b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00045_a8d6301bf71ec31399902316ef4574daa}\label{a00045_a8d6301bf71ec31399902316ef4574daa}} 
+\index{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide@{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide}!GetAssemblyStepsText@{GetAssemblyStepsText}}
+\index{GetAssemblyStepsText@{GetAssemblyStepsText}!ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide@{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide}}
+\doxysubsubsection{\texorpdfstring{GetAssemblyStepsText()}{GetAssemblyStepsText()}}
+{\footnotesize\ttfamily List$<$ string $>$ ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+Get\+Assembly\+Steps\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Perform a topological sort to get the steps in the order they should be performed.
+
+Initialize a new list to store the steps in text format.
+
+Iterate over the sorted steps in reverse order. This is because the topological sort gives us the steps in reverse order (the last step comes first).
+
+Get the ID of the current step.
+
+Find the step with the current ID in the list of all assembly steps.
+
+Add the description of the current step to the list of step texts, prefixed by \char`\"{}\+Step \{step\+Id\}\+:\char`\"{}.
+
+Return the list of step descriptions in the correct order.
+
+References \mbox{\hyperlink{a00045_aaf883e2738ea2b5e1d86780e6dd6a51c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+assembly\+Steps}}, and \mbox{\hyperlink{a00045_a7015a8adb8988aba828d74572ad2aa53}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+Topological\+Sort()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d97/a00045_a8d6301bf71ec31399902316ef4574daa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00045_a7015a8adb8988aba828d74572ad2aa53}\label{a00045_a7015a8adb8988aba828d74572ad2aa53}} 
+\index{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide@{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide}!TopologicalSort@{TopologicalSort}}
+\index{TopologicalSort@{TopologicalSort}!ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide@{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide}}
+\doxysubsubsection{\texorpdfstring{TopologicalSort()}{TopologicalSort()}}
+{\footnotesize\ttfamily List$<$ int $>$ ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+Topological\+Sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a dictionary from the list of assembly steps for easy lookup by step ID.
+
+Create a hash set to keep track of the steps that have been visited during the depth-\/first search (DFS).
+
+Create a stack to hold the sorted steps. Steps are added to the stack after all their dependencies have been visited.
+
+Iterate over each step in the dictionary. If a step has not been visited, perform a DFS from that step.
+
+Return the steps in the order they should be performed. Since we added steps to the stack after their dependencies,
+
+converting the stack to a list gives the correct order of steps.
+
+References \mbox{\hyperlink{a00045_aaf883e2738ea2b5e1d86780e6dd6a51c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+assembly\+Steps}}, and \mbox{\hyperlink{a00045_a846d57fb7f2cb6b0d4d1f089da24c20b}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+DFS()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00045_a8d6301bf71ec31399902316ef4574daa}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+Get\+Assembly\+Steps\+Text()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d97/a00045_a7015a8adb8988aba828d74572ad2aa53_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d97/a00045_a7015a8adb8988aba828d74572ad2aa53_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{a00045_aaf883e2738ea2b5e1d86780e6dd6a51c}\label{a00045_aaf883e2738ea2b5e1d86780e6dd6a51c}} 
+\index{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide@{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide}!assemblySteps@{assemblySteps}}
+\index{assemblySteps@{assemblySteps}!ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide@{ce100\_hw3\_algo\_lib\_cs.IkeaAssemblyGuide}}
+\doxysubsubsection{\texorpdfstring{assemblySteps}{assemblySteps}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{a00041}{Assembly\+Step}}$>$ ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+assembly\+Steps\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Define a private list of Assembly\+Step objects. This will hold all the assembly steps in the guide. 
+
+
+
+Referenced by \mbox{\hyperlink{a00045_a4a9c173fe0505b03a6b1f96990353008}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+Add\+Assembly\+Step()}}, \mbox{\hyperlink{a00045_a8d6301bf71ec31399902316ef4574daa}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+Get\+Assembly\+Steps\+Text()}}, \mbox{\hyperlink{a00045_ac6bbbcb86886be534ad02a240dc3df4b}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+Ikea\+Assembly\+Guide()}}, and \mbox{\hyperlink{a00045_a7015a8adb8988aba828d74572ad2aa53}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Ikea\+Assembly\+Guide.\+Topological\+Sort()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce100-\/hw3-\/algo-\/lib-\/cs/\mbox{\hyperlink{a00002}{Class1.\+cs}}\end{DoxyCompactItemize}

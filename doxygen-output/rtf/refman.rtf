@@ -1,0 +1,3072 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment CE100 Algorithms and Programming II HW3  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+v1.0.0 \par
+}}CE100 Algorithms and Programming II HW3}
+{\comment Generated by doxygen 1.9.6.}
+{\creatim \yr2023\mo5\dy13\hr17\min1\sec3}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt CE100 Algorithms and Programming II HW3}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version v1.0.0\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Sat May 13 2023 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Index\par \pard\plain 
+{\tc \v Namespace Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Namespace List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all namespaces with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Hierarchical Index\par \pard\plain 
+{\tc \v Hierarchical Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class Hierarchy\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This inheritance list is sorted roughly, but not completely, alphabetically:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+ce100_hw3_algo_lib_cs.AssemblyStep\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+ce100_hw3_algo_lib_cs.BellmanFord\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+ce100_hw3_algo_lib_cs.DisjointSet\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+ce100_hw3_algo_lib_cs.Edge\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+ce100_hw3_algo_lib_cs.EdgePS\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+ce100_hw3_algo_lib_cs.HuffmanCoding\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+IComparable
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+ce100_hw3_algo_lib_cs.HuffmanNode\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+ce100_hw3_algo_lib_cs.IkeaAssemblyGuide\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+ce100_hw3_algo_lib_cs.PipelineSystem\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+ce100_hw3_algo_lib_cs.Tree\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Index\par \pard\plain 
+{\tc \v Data Structure Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Data Structures\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the data structures with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.AssemblyStep}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.BellmanFord}}}
+ ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+BellmanFord s\'C4\'B1n\'C4\'B1f\'C4\'B1, applies the Bellman-Ford algorithm to find the shortest path in a graph })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Edge}}}
+ ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Using the Bellman-Ford algorithm to find the shortest paths from a source origin node to all other nodes in a graph })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.EdgePS}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAE" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Tree}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all files with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b ce100-hw3-algo-lib-cs/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 Class1.cs}}}
+ ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b  HW-3 Functions }  })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b ce100-hw3-algo-lib-cs/obj/Debug/net7.0/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 .NETCoreApp,Version=v7.0.AssemblyAttributes.cs}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b ce100-hw3-algo-lib-cs/obj/Debug/net7.0/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAO" }{}}{\fldrslt {\cs37\ul\cf2 ce100-hw3-algo-lib-cs.AssemblyInfo.cs}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b ce100-hw3-algo-lib-cs/obj/Debug/net7.0/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAQ" }{}}{\fldrslt {\cs37\ul\cf2 ce100-hw3-algo-lib-cs.GlobalUsings.g.cs}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b ce100-hw3-algo-lib-cs/obj/Release/net7.0/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 .NETCoreApp,Version=v7.0.AssemblyAttributes.cs}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b ce100-hw3-algo-lib-cs/obj/Release/net7.0/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 ce100-hw3-algo-lib-cs.AssemblyInfo.cs}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b ce100-hw3-algo-lib-cs/obj/Release/net7.0/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 ce100-hw3-algo-lib-cs.GlobalUsings.g.cs}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Documentation\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs}
+{\xe \v ce100_hw3_algo_lib_cs}
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 AssemblyStep}}}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 BellmanFord}}}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+BellmanFord s\'C4\'B1n\'C4\'B1f\'C4\'B1, applies the Bellman-Ford algorithm to find the shortest path in a graph. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 DisjointSet}}}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Edge}}}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Using the Bellman-Ford algorithm to find the shortest paths from a source origin node to all other nodes in a graph. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 EdgePS}}}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanCoding}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAE" }{}}{\fldrslt {\cs37\ul\cf2 IkeaAssemblyGuide}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 PipelineSystem}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Tree}}}
+\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Documentation{\tc \v Data Structure Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.AssemblyStep Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.AssemblyStep}
+{\xe \v ce100_hw3_algo_lib_cs.AssemblyStep}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAS" }{}}{\fldrslt {\cs37\ul\cf2 StepId}}}
+{\f2  [get, set]}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Define a public integer property named StepId. This is the unique identifier for each assembly step. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 Description}}}
+{\f2  [get, set]}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Define a public string property named Description. This provides detailed information about the assembly step. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+List< int > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAU" }{}}{\fldrslt {\cs37\ul\cf2 Dependencies}}}
+{\f2  [get, set]}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Define a public list of integers property named Dependencies. Each integer in this list represents the StepId of another AssemblyStep that must be completed before this one. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Property Documentation\par
+\pard\plain 
+{\xe \v Dependencies\:ce100_hw3_algo_lib_cs.AssemblyStep}
+{\xe \v ce100_hw3_algo_lib_cs.AssemblyStep\:Dependencies}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+List<int> ce100_hw3_algo_lib_cs.AssemblyStep.Dependencies{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Define a public list of integers property named Dependencies. Each integer in this list represents the StepId of another AssemblyStep that must be completed before this one. }}\par
+}
+{\xe \v Description\:ce100_hw3_algo_lib_cs.AssemblyStep}
+{\xe \v ce100_hw3_algo_lib_cs.AssemblyStep\:Description}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string ce100_hw3_algo_lib_cs.AssemblyStep.Description{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Define a public string property named Description. This provides detailed information about the assembly step. }}\par
+}
+{\xe \v StepId\:ce100_hw3_algo_lib_cs.AssemblyStep}
+{\xe \v ce100_hw3_algo_lib_cs.AssemblyStep\:StepId}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int ce100_hw3_algo_lib_cs.AssemblyStep.StepId{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Define a public integer property named StepId. This is the unique identifier for each assembly step. }}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ce100-hw3-algo-lib-cs/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 Class1.cs}}}
+\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.BellmanFord Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.BellmanFord}
+{\xe \v ce100_hw3_algo_lib_cs.BellmanFord}
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+BellmanFord s\'C4\'B1n\'C4\'B1f\'C4\'B1, applies the Bellman-Ford algorithm to find the shortest path in a graph. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static int[] {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 FindShortestPath}}}
+ (List< {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Edge}}}
+ > edges, int verticesCount, int source)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Private Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 INF}}}
+ = int.MaxValue\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+BellmanFord s\'C4\'B1n\'C4\'B1f\'C4\'B1, applies the Bellman-Ford algorithm to find the shortest path in a graph. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v FindShortestPath\:ce100_hw3_algo_lib_cs.BellmanFord}
+{\xe \v ce100_hw3_algo_lib_cs.BellmanFord\:FindShortestPath}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static int[] ce100_hw3_algo_lib_cs.BellmanFord.FindShortestPath (List< {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Edge}}}
+ >  {\i edges}, int  {\i verticesCount}, int  {\i source}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initialize the distances array to store the shortest distances from the source node to all other nodes\par
+sets start distances to infinity\par
+sets the distance from the source node to itself to 0\par
+traverse all nodes (except source nodes) and if a shorter path is found, select that distance\par
+traverse all nodes and if a shorter path is found, select that distance\par
+gets the source node of the edge\par
+gets the target node of the edge\par
+takes the weight of the edge\par
+If the distance from the source node to node u is not infinite and the distance from node u to node v over this edge is shorter than the current distance from the source node to node v\par
+update the distance from the source node to node v\par
+Iterate through all edges in the graph and check for negative-weight cycle\par
+Source vertex of the edge\par
+Destination vertex of the edge\par
+Weight of the edge\par
+If distance from source vertex to vertex u is not infinity and distance from vertex u to vertex v through this edge is shorter than current distance from source vertex to vertex v\par
+Throw exception indicating presence of negative-weight cycle\par
+Return array of shortest distances from source vertex to all other vertices in the graph\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Edge.Destination}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.BellmanFord.INF}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Edge.Source}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Edge.Weight}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v INF\:ce100_hw3_algo_lib_cs.BellmanFord}
+{\xe \v ce100_hw3_algo_lib_cs.BellmanFord\:INF}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int ce100_hw3_algo_lib_cs.BellmanFord.INF = int.MaxValue{\f2 [static]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.BellmanFord.FindShortestPath()}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ce100-hw3-algo-lib-cs/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 Class1.cs}}}
+\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.DisjointSet Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.DisjointSet}
+{\xe \v ce100_hw3_algo_lib_cs.DisjointSet}
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 DisjointSet}}}
+ (int size)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 Find}}}
+ (int x)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 Union}}}
+ (int x, int y)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int[] {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 _parent}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int[] {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABE" }{}}{\fldrslt {\cs37\ul\cf2 _rank}}}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cod array representing a discrete data structure \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v DisjointSet\:ce100_hw3_algo_lib_cs.DisjointSet}
+{\xe \v ce100_hw3_algo_lib_cs.DisjointSet\:DisjointSet}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ce100_hw3_algo_lib_cs.DisjointSet.DisjointSet (int  {\i size}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Prompts to instantiate a new instance of the DisjoinSet class with the desired size {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i size} \cell }{holds the size of the disjoint set \cell }
+{\row }
+}
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+creates _parent and _rank arrays of the specified size\par
+Sets the root of each element equal to itself and sets its rank to 0\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet._parent}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABE" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet._rank}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Find\:ce100_hw3_algo_lib_cs.DisjointSet}
+{\xe \v ce100_hw3_algo_lib_cs.DisjointSet\:Find}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int ce100_hw3_algo_lib_cs.DisjointSet.Find (int  {\i x}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Allows to find the root of the desired element {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i x} \cell }{is the element whose root will be found \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+root of the specified element \par
+}}}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet._parent}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet.Find()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet.Find()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet.Union()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d4/de8/a00061_ab0ce59644f20a8797859aa81b476091d_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d4/de8/a00061_ab0ce59644f20a8797859aa81b476091d_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Union\:ce100_hw3_algo_lib_cs.DisjointSet}
+{\xe \v ce100_hw3_algo_lib_cs.DisjointSet\:Union}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.DisjointSet.Union (int  {\i x}, int  {\i y}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+code sequence combining the roots of two elements {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i x} \cell }{first element to be merged \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i y} \cell }{second element to be merged \cell }
+{\row }
+}
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Finds the roots of the first and second element\par
+no concatenation if the two roots have the same value\par
+If the rank of the first element is greater than the second, equals the root of the second to the first\par
+If the rank of the first element is less than the second, equals the root of the first to the second\par
+If the ranks are equal, equals the root of the second to the first and increases the rank of the first\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet._parent}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABE" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet._rank}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet.Find()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d4/de8/a00061_ac614ef2b43283a2d38e500463c32ae60_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v _parent\:ce100_hw3_algo_lib_cs.DisjointSet}
+{\xe \v ce100_hw3_algo_lib_cs.DisjointSet\:_parent}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int [] ce100_hw3_algo_lib_cs.DisjointSet._parent{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet.DisjointSet()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet.Find()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet.Union()}}}
+.}\par
+}
+{\xe \v _rank\:ce100_hw3_algo_lib_cs.DisjointSet}
+{\xe \v ce100_hw3_algo_lib_cs.DisjointSet\:_rank}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int [] ce100_hw3_algo_lib_cs.DisjointSet._rank{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet.DisjointSet()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet.Union()}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ce100-hw3-algo-lib-cs/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 Class1.cs}}}
+\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.Edge Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.Edge}
+{\xe \v ce100_hw3_algo_lib_cs.Edge}
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Using the Bellman-Ford algorithm to find the shortest paths from a source origin node to all other nodes in a graph. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABF" }{}}{\fldrslt {\cs37\ul\cf2 Edge}}}
+ (int source, int destination, int weight)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for Edge class. }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 Source}}}
+{\f2  [get, set]}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Source vertex of the edge. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 Destination}}}
+{\f2  [get, set]}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Destination vertex of the edge. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 Weight}}}
+{\f2  [get, set]}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Weight of the edge. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Using the Bellman-Ford algorithm to find the shortest paths from a source origin node to all other nodes in a graph. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i edges} \cell }{is the list of edges in the graph \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i verticesCount} \cell }{keeps the number of nodes in the graph \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i source} \cell }{source node used to find the shortest path \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+sequence of distances from the source node to all other nodes in the graph \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v Edge\:ce100_hw3_algo_lib_cs.Edge}
+{\xe \v ce100_hw3_algo_lib_cs.Edge\:Edge}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ce100_hw3_algo_lib_cs.Edge.Edge (int  {\i source}, int  {\i destination}, int  {\i weight}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for Edge class. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i source} \cell }{Source vertex of the edge \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i destination} \cell }{Destination vertex of the edge \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i weight} \cell }{Weight of the edge \cell }
+{\row }
+}
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Edge.Destination}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Edge.Source}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Edge.Weight}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Property Documentation\par
+\pard\plain 
+{\xe \v Destination\:ce100_hw3_algo_lib_cs.Edge}
+{\xe \v ce100_hw3_algo_lib_cs.Edge\:Destination}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int ce100_hw3_algo_lib_cs.Edge.Destination{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Destination vertex of the edge. }}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABF" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Edge.Edge()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.BellmanFord.FindShortestPath()}}}
+.}\par
+}
+{\xe \v Source\:ce100_hw3_algo_lib_cs.Edge}
+{\xe \v ce100_hw3_algo_lib_cs.Edge\:Source}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int ce100_hw3_algo_lib_cs.Edge.Source{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Source vertex of the edge. }}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABF" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Edge.Edge()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.BellmanFord.FindShortestPath()}}}
+.}\par
+}
+{\xe \v Weight\:ce100_hw3_algo_lib_cs.Edge}
+{\xe \v ce100_hw3_algo_lib_cs.Edge\:Weight}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int ce100_hw3_algo_lib_cs.Edge.Weight{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Weight of the edge. }}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABF" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Edge.Edge()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.BellmanFord.FindShortestPath()}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ce100-hw3-algo-lib-cs/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 Class1.cs}}}
+\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.EdgePS Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.EdgePS}
+{\xe \v ce100_hw3_algo_lib_cs.EdgePS}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Tree}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABG" }{}}{\fldrslt {\cs37\ul\cf2 Source}}}
+{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Tree}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABH" }{}}{\fldrslt {\cs37\ul\cf2 Destination}}}
+{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+double {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 Distance}}}
+{\f2  [get, set]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+class representing an edge between two trees \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Property Documentation\par
+\pard\plain 
+{\xe \v Destination\:ce100_hw3_algo_lib_cs.EdgePS}
+{\xe \v ce100_hw3_algo_lib_cs.EdgePS\:Destination}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Tree}}}
+ ce100_hw3_algo_lib_cs.EdgePS.Destination{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Target tree located on the edge \par
+}{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABJ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.KruskalMST()}}}
+.}\par
+}
+{\xe \v Distance\:ce100_hw3_algo_lib_cs.EdgePS}
+{\xe \v ce100_hw3_algo_lib_cs.EdgePS\:Distance}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+double ce100_hw3_algo_lib_cs.EdgePS.Distance{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Input containing the distance between the target and source tree \par
+}}
+{\xe \v Source\:ce100_hw3_algo_lib_cs.EdgePS}
+{\xe \v ce100_hw3_algo_lib_cs.EdgePS\:Source}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Tree}}}
+ ce100_hw3_algo_lib_cs.EdgePS.Source{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Source tree located on the edge \par
+}{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABJ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.KruskalMST()}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ce100-hw3-algo-lib-cs/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 Class1.cs}}}
+\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.HuffmanCoding Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Compress\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding compress Function\par
+In this method .txt files are compressed.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[inputFilePath, outputFilePath string] Compress Function \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABK" }{}}{\fldrslt {\cs37\ul\cf2 Compress}}}
+ (string inputFilePath, string outputFilePath)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Compress Music\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding compress Function\par
+In this method .MP3 files are compressed.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[inputFilePath, outputFilePath string] Compress Function \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 CompressMusic}}}
+ (string inputFilePath, string outputFilePath)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Decompress\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding Decompress Function\par
+In this method .txt files are decompressed.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[inputFilePath, outputFilePath string] Decompress Function \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABM" }{}}{\fldrslt {\cs37\ul\cf2 Decompress}}}
+ (string inputFilePath, string outputFilePath)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Decompress Music\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding Decompress Function\par
+In this method .mp3 files are decompressed.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[inputFilePath, outputFilePath string] Decompress Function \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABN" }{}}{\fldrslt {\cs37\ul\cf2 DecompressMusic}}}
+ (string inputFilePath, string outputFilePath)\par
+}
+}\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Member Functions\par
+\pard\plain 
+{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Calculate Frequencies\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding CalculateFrequencies Function\par
+Method to calculate the frequencies of each character in a string\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[content string] Calculate Frequencies Function \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Dictionary< char, int > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABO" }{}}{\fldrslt {\cs37\ul\cf2 CalculateFrequencies}}}
+ (string content)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Calculate Frequencies Music\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding CalculateFrequenciesMusic Function\par
+Method to calculate the frequencies of each byte in a byte array\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[content string] Calculate Frequencies Function Music \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Dictionary< byte, int > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABP" }{}}{\fldrslt {\cs37\ul\cf2 CalculateFrequenciesMusic}}}
+ (byte[] content)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Build Huffman Tree\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding BuildHuffmanTree Function\par
+Method to build the Huffman tree from a dictionary of character frequencies\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[frequencies Dictionary<char, int>] Build Huffman Tree \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 BuildHuffmanTree}}}
+ (Dictionary< char, int > frequencies)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Build Huffman Tree Music\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding BuildHuffmanTreeMusic Function\par
+Method to build the Huffman tree from a dictionary of byte frequencies\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[frequencies Dictionary<char, int>] Build Huffman Tree Music \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 BuildHuffmanTreeMusic}}}
+ (Dictionary< byte, int > frequencies)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Generate Huffman Codes\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding GenerateHuffmanCodes Function\par
+Method to generate Huffman codes for each character using the Huffman tree\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[code string] Generate Huffman Codes \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 GenerateHuffmanCodes}}}
+ ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ node, string code)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Generate Huffman Codes Music\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding GenerateHuffmanCodesMusic Function\par
+Method to generate Huffman codes for each byte using the Huffman tree.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[code string] Generate Huffman Codes Music \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABT" }{}}{\fldrslt {\cs37\ul\cf2 GenerateHuffmanCodesMusic}}}
+ ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ node, string code)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Read Huffman Tree\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding ReadHuffmanTree Function\par
+Method to reconstruct the Huffman tree from binary data.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[binaryReader BinaryReader] Read Huffman Tree \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 ReadHuffmanTree}}}
+ (BinaryReader binaryReader)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Read Huffman Tree Music\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding ReadHuffmanTreeMusic Function\par
+Method to reconstruct the Huffman tree from binary data for music decompression.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[binaryReader BinaryReader] Read Huffman Tree Music \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABV" }{}}{\fldrslt {\cs37\ul\cf2 ReadHuffmanTreeMusic}}}
+ (BinaryReader binaryReader)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Convert to String\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding ConvertToString Function\par
+Method to convert a byte array into a string of binary digits\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[bytes byte] Convert to String \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABW" }{}}{\fldrslt {\cs37\ul\cf2 ConvertToString}}}
+ (byte[] bytes)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Write Huffman Tree\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding WriteHuffmanTree Function\par
+Method to write the Huffman tree to binary data.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[binaryWriter,node BinaryWriter, HuffmanNode] Write Huffman Tree \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 WriteHuffmanTree}}}
+ (BinaryWriter binaryWriter, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ node)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Write Huffman Tree Music\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding WriteHuffmanTreeMusic Function\par
+Method to write the Huffman tree for music to binary data.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[binaryWriter,node BinaryWriter, HuffmanNode] Write Huffman Tree Music \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 WriteHuffmanTreeMusic}}}
+ (BinaryWriter binaryWriter, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ node)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Convert to Bytes\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Huffman Coding ConvertToBytes Function\par
+Method to convert a binary string to an array of bytes.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[binaryWriter,node BinaryWriter, HuffmanNode] Convert to Bytes \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+byte[] {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABZ" }{}}{\fldrslt {\cs37\ul\cf2 ConvertToBytes}}}
+ (string binaryString)\par
+}
+}\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Dictionary< char, string > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACA" }{}}{\fldrslt {\cs37\ul\cf2 _huffmanCodes}}}
+ = new Dictionary<char, string>()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Define two dictionaries to hold the Huffman codes for characters and mp3 bytes respectively. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Dictionary< byte, string > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACB" }{}}{\fldrslt {\cs37\ul\cf2 _huffmanCodesmp3}}}
+ = new Dictionary<byte, string>()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v BuildHuffmanTree\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:BuildHuffmanTree}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ ce100_hw3_algo_lib_cs.HuffmanCoding.BuildHuffmanTree (Dictionary< char, int >  {\i frequencies}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Create a priority queue of Huffman nodes, each node is associated with a character and its frequency\par
+Continue until there is only one node left in the priority queue (the root of the Huffman tree)\par
+Order the priority queue by frequency\par
+The two nodes with the lowest frequency are combined into a new node\par
+Create a new node with the combined frequency of the two lowest nodes, and these two nodes as its children\par
+Remove the two lowest nodes from the priority queue\par
+Add the new node to the priority queue\par
+Return the remaining node in the priority queue, which is the root of the Huffman tree\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Frequency}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABK" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.Compress()}}}
+.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_affcdeaa6badf321a09e37e76e712efae_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v BuildHuffmanTreeMusic\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:BuildHuffmanTreeMusic}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ ce100_hw3_algo_lib_cs.HuffmanCoding.BuildHuffmanTreeMusic (Dictionary< byte, int >  {\i frequencies}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Create a priority queue of Huffman nodes, each node is associated with a byte and its frequency\par
+Continue until there is only one node left in the priority queue (the root of the Huffman tree)\par
+Order the priority queue by frequency\par
+The two nodes with the lowest frequency are combined into a new node\par
+Create a new node with the combined frequency of the two lowest nodes, and these two nodes as its children\par
+Remove the two lowest nodes from the priority queue\par
+Add the new node to the priority queue\par
+Return the remaining node in the priority queue, which is the root of the Huffman tree\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Frequency}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.CompressMusic()}}}
+.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_a27f286e0909c7cab5743a9ece17bd24c_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v CalculateFrequencies\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:CalculateFrequencies}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Dictionary< char, int > ce100_hw3_algo_lib_cs.HuffmanCoding.CalculateFrequencies (string  {\i content}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initialize a dictionary to hold the frequencies\par
+Iterate over each character in the string\par
+If the character is already in the dictionary, increment its frequency\par
+If the character is not in the dictionary, add it with a frequency of 1\par
+Return the dictionary of frequencies\par
+}{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABK" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.Compress()}}}
+.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_a2983cb4c628ada1bf5194e9a5be7ce68_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v CalculateFrequenciesMusic\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:CalculateFrequenciesMusic}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Dictionary< byte, int > ce100_hw3_algo_lib_cs.HuffmanCoding.CalculateFrequenciesMusic (byte[]  {\i content}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initialize a dictionary to hold the frequencies\par
+Iterate over each byte in the byte array\par
+If the byte is already in the dictionary, increment its frequency\par
+If the byte is not in the dictionary, add it with a frequency of 1\par
+Return the dictionary of frequencies\par
+}{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.CompressMusic()}}}
+.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_a8d84293a194b37dfde97bf0822dfd063_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Compress\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:Compress}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.HuffmanCoding.Compress (string  {\i inputFilePath}, string  {\i outputFilePath}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Read the content of the input file\par
+Calculate the frequency of each character in the content\par
+Build the Huffman tree based on the calculated frequencies\par
+Generate the Huffman codes from the Huffman tree\par
+Initialize a StringBuilder to hold the compressed data\par
+Append the Huffman code for each character in the content to the compressed data\par
+Calculate the size of the padding needed to make the compressed data a multiple of 8\par
+If padding is needed, append '0's to the compressed data\par
+Open a FileStream to write the compressed data to the output file\par
+Use a BinaryWriter to write to the FileStream\par
+Write the Huffman tree to the output file\par
+Convert the compressed data to bytes\par
+Write the original length of the compressed data (without the padding) to the output file\par
+Write the length of the compressed data bytes to the output file\par
+Write the compressed data bytes to the output file\par
+Write the padding size to the output file\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACA" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding._huffmanCodes}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.BuildHuffmanTree()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABO" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.CalculateFrequencies()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABZ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.ConvertToBytes()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodes()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTree()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_a9ee06d4149a24953729761d439dcba5b_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v CompressMusic\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:CompressMusic}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.HuffmanCoding.CompressMusic (string  {\i inputFilePath}, string  {\i outputFilePath}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACB" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding._huffmanCodesmp3}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.BuildHuffmanTreeMusic()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABP" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.CalculateFrequenciesMusic()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABZ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.ConvertToBytes()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABT" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodesMusic()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTreeMusic()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_a1a9b80d2bbca1af8427d8f52b784f506_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v ConvertToBytes\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:ConvertToBytes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+byte[] ce100_hw3_algo_lib_cs.HuffmanCoding.ConvertToBytes (string  {\i binaryString}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Calculate padding size - how many extra '0's need to be added to the end of the string\par
+to make it a multiple of 8 (length of one byte)\par
+If the padding size is not 8, pad the binary string with '0's on the right\par
+Determine the number of bytes in the binary string\par
+Initialize a byte array of the determined size\par
+Iterate over the binary string in chunks of 8 characters (one byte)\par
+Extract the current chunk of 8 characters\par
+Convert the chunk to a byte and store it in the byte array\par
+Return the byte array\par
+}{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABK" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.Compress()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.CompressMusic()}}}
+.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_a6047aaefe4b1888c936d73199af6599d_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v ConvertToString\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:ConvertToString}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string ce100_hw3_algo_lib_cs.HuffmanCoding.ConvertToString (byte[]  {\i bytes}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initialize a StringBuilder with capacity equal to the number of bytes times 8 (since each byte has 8 bits)\par
+For each byte in the input array\par
+Convert the byte to a binary string (base 2), pad with leading zeros to ensure it's always 8 digits long,\par
+and append it to the StringBuilder\par
+Return the binary string\par
+}{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABM" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.Decompress()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABN" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.DecompressMusic()}}}
+.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_a5dec26849da8660756cb34c0dfc50378_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Decompress\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:Decompress}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.HuffmanCoding.Decompress (string  {\i inputFilePath}, string  {\i outputFilePath}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Open a FileStream to read the compressed data from the input file\par
+Use a BinaryReader to read from the FileStream\par
+Read the Huffman tree from the input file\par
+Read the original length of the compressed data (without the padding) from the input file\par
+Read the length of the compressed data bytes from the input file\par
+Read the compressed data bytes from the input file\par
+Convert the compressed data bytes to a string and remove any padding\par
+Initialize a StringBuilder to hold the decompressed data\par
+Define a variable to hold the current node in the Huffman tree\par
+Iterate over each bit in the compressed data\par
+If the bit is '0', move to the left child of the current node, otherwise move to the right child\par
+If the current node is a leaf node, append its character to the decompressed data and reset the current node to the root of the Huffman tree\par
+Write the decompressed data to the output file\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABW" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.ConvertToString()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.ReadHuffmanTree()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Right}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_a1b562ea17d82d01a7ee03a0886010ce9_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v DecompressMusic\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:DecompressMusic}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.HuffmanCoding.DecompressMusic (string  {\i inputFilePath}, string  {\i outputFilePath}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Open a FileStream to read the compressed data from the input file\par
+Use a BinaryReader to read from the FileStream\par
+Read the Huffman tree from the input file\par
+Read the original length of the compressed data (without the padding) from the input file\par
+Read the length of the compressed data bytes from the input file\par
+Read the compressed data bytes from the input file\par
+Convert the compressed data bytes to a string and remove any padding\par
+Initialize a list to hold the decompressed data\par
+Define a variable to hold the current node in the Huffman tree\par
+Iterate over each bit in the compressed data\par
+If the bit is '0', move to the left child of the current node, otherwise move to the right child\par
+If the current node is a leaf node, append its byte to the decompressed data and reset the current node to the root of the Huffman tree\par
+Write the decompressed data to the output file\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABW" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.ConvertToString()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABV" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.ReadHuffmanTreeMusic()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Right}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_af0ae47782a69606df04a3c69e93515ab_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v GenerateHuffmanCodes\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:GenerateHuffmanCodes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodes ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+  {\i node}, string  {\i code}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+If the node is null, return immediately\par
+If the node is a leaf node (i.e., it has no children),\par
+then it represents a character, and we assign the current code to this character\par
+Recursively generate codes for the left and right children,\par
+appending '0' for the left child and '1' for the right child\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACA" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding._huffmanCodes}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACE" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Character}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodes()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACF" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Left}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Right}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABK" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.Compress()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodes()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_a0da73d3540c0880297c5addaa506bff9_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_a0da73d3540c0880297c5addaa506bff9_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v GenerateHuffmanCodesMusic\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:GenerateHuffmanCodesMusic}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodesMusic ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+  {\i node}, string  {\i code}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+If the node is null, return immediately\par
+If the node is a leaf node (i.e., it has no children),\par
+then it represents a byte, and we assign the current code to this byte\par
+Recursively generate codes for the left and right children,\par
+appending '0' for the left child and '1' for the right child\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACB" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding._huffmanCodesmp3}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACG" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Character2}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABT" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodesMusic()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACF" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Left}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Right}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.CompressMusic()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABT" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodesMusic()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_a454d5acc292a5400c1daf08a05627a26_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_a454d5acc292a5400c1daf08a05627a26_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v ReadHuffmanTree\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:ReadHuffmanTree}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ ce100_hw3_algo_lib_cs.HuffmanCoding.ReadHuffmanTree (BinaryReader  {\i binaryReader}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+If there are no more bytes to read, return null\par
+Read the node type (1 for leaf nodes, other values for internal nodes)\par
+If the node type is 1, it's a leaf node, so we read the character\par
+Read the character from the binary data\par
+Create and return a new leaf node with this character\par
+If the node type is not 1, it's an internal node, so we read the left and right children\par
+Recursively read the left child\par
+Recursively read the right child\par
+Create and return a new internal node with these children\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.ReadHuffmanTree()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABM" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.Decompress()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.ReadHuffmanTree()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_af4b0bbb26ad996fba9cd355ae8d4051c_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_af4b0bbb26ad996fba9cd355ae8d4051c_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v ReadHuffmanTreeMusic\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:ReadHuffmanTreeMusic}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ ce100_hw3_algo_lib_cs.HuffmanCoding.ReadHuffmanTreeMusic (BinaryReader  {\i binaryReader}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+If there are no more bytes to read, return null\par
+Read the node type (1 for leaf nodes, other values for internal nodes)\par
+If the node type is 1, it's a leaf node, so we read the byte\par
+Read the byte from the binary data\par
+Create and return a new leaf node with this byte\par
+If the node type is not 1, it's an internal node, so we read the left and right children\par
+Recursively read the left child\par
+Recursively read the right child\par
+Create and return a new internal node with these children\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABV" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.ReadHuffmanTreeMusic()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABN" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.DecompressMusic()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABV" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.ReadHuffmanTreeMusic()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_abef73fdccbdf277340b8c22e0cedfa6c_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_abef73fdccbdf277340b8c22e0cedfa6c_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v WriteHuffmanTree\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:WriteHuffmanTree}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTree (BinaryWriter  {\i binaryWriter}, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+  {\i node}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+If the node is null, we've reached a leaf node, so return\par
+If the node is a leaf node (both left and right children are null)\par
+Write a byte value of 1 to denote a leaf node\par
+Write the character of this leaf node (convert the character to ushort for writing)\par
+If the node is an internal node (it has at least one child)\par
+Write a byte value of 0 to denote an internal node\par
+Recursively write the left child\par
+Recursively write the right child\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACE" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Character}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACF" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Left}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Right}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTree()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABK" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.Compress()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTree()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_ab2ae563d2e3680093be21533d41db21c_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_ab2ae563d2e3680093be21533d41db21c_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v WriteHuffmanTreeMusic\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:WriteHuffmanTreeMusic}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTreeMusic (BinaryWriter  {\i binaryWriter}, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+  {\i node}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+If the node is null, we've reached a leaf node, so return\par
+If the node is a leaf node (both left and right children are null)\par
+Write a byte value of 1 to denote a leaf node\par
+Write the byte (Character2) of this leaf node\par
+If the node is an internal node (it has at least one child)\par
+Write a byte value of 0 to denote an internal node\par
+Recursively write the left child\par
+Recursively write the right child\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACG" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Character2}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACF" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Left}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Right}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTreeMusic()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.CompressMusic()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTreeMusic()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_ac774266c6a7617b68c8e66cb4de43dff_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/dc6/a00037_ac774266c6a7617b68c8e66cb4de43dff_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v _huffmanCodes\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:_huffmanCodes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Dictionary<char, string> ce100_hw3_algo_lib_cs.HuffmanCoding._huffmanCodes = new Dictionary<char, string>(){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Define two dictionaries to hold the Huffman codes for characters and mp3 bytes respectively. }}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABK" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.Compress()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodes()}}}
+.}\par
+}
+{\xe \v _huffmanCodesmp3\:ce100_hw3_algo_lib_cs.HuffmanCoding}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanCoding\:_huffmanCodesmp3}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Dictionary<byte, string> ce100_hw3_algo_lib_cs.HuffmanCoding._huffmanCodesmp3 = new Dictionary<byte, string>(){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.CompressMusic()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABT" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodesMusic()}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ce100-hw3-algo-lib-cs/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 Class1.cs}}}
+\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.HuffmanNode Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.HuffmanNode}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanNode}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+Inheritance diagram for ce100_hw3_algo_lib_cs.HuffmanNode:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d87/a00032.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for ce100_hw3_algo_lib_cs.HuffmanNode:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "df/d61/a00031.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACH" }{}}{\fldrslt {\cs37\ul\cf2 CompareTo}}}
+ ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ other)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defining a method called "CompareTo". This method comes from the "IComparable" interface and is used to compare objects of this class. }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACE" }{}}{\fldrslt {\cs37\ul\cf2 Character}}}
+{\f2  [get, set]}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defining a character property called "*Character". This represents the character at the node of the Huffman tree. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+byte {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACG" }{}}{\fldrslt {\cs37\ul\cf2 Character2}}}
+{\f2  [get, set]}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defining a byte property called Character2. This can represent the second character in the node of the Huffman tree. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 Frequency}}}
+{\f2  [get, set]}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defining an integer property called "Frequency". This represents the frequency (i.e. the number of repetitions in the text) of a given character. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACF" }{}}{\fldrslt {\cs37\ul\cf2 Left}}}
+{\f2  [get, set]}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defining a HuffmanNode property called "Left". This represents the left child of this node of the Huffman tree. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 Right}}}
+{\f2  [get, set]}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defining a HuffmanNode property called "Right". This represents the right child node of this node of the Huffman tree. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v CompareTo\:ce100_hw3_algo_lib_cs.HuffmanNode}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanNode\:CompareTo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int ce100_hw3_algo_lib_cs.HuffmanNode.CompareTo ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+  {\i other}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defining a method called "CompareTo". This method comes from the "IComparable" interface and is used to compare objects of this class. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+In this case, objects are compared according to the "Frequency" property. \par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.Frequency}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Property Documentation\par
+\pard\plain 
+{\xe \v Character\:ce100_hw3_algo_lib_cs.HuffmanNode}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanNode\:Character}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char ce100_hw3_algo_lib_cs.HuffmanNode.Character{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defining a character property called "*Character". This represents the character at the node of the Huffman tree. }}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodes()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTree()}}}
+.}\par
+}
+{\xe \v Character2\:ce100_hw3_algo_lib_cs.HuffmanNode}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanNode\:Character2}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+byte ce100_hw3_algo_lib_cs.HuffmanNode.Character2{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defining a byte property called Character2. This can represent the second character in the node of the Huffman tree. }}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABT" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodesMusic()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTreeMusic()}}}
+.}\par
+}
+{\xe \v Frequency\:ce100_hw3_algo_lib_cs.HuffmanNode}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanNode\:Frequency}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int ce100_hw3_algo_lib_cs.HuffmanNode.Frequency{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defining an integer property called "Frequency". This represents the frequency (i.e. the number of repetitions in the text) of a given character. }}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.BuildHuffmanTree()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.BuildHuffmanTreeMusic()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACH" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode.CompareTo()}}}
+.}\par
+}
+{\xe \v Left\:ce100_hw3_algo_lib_cs.HuffmanNode}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanNode\:Left}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ ce100_hw3_algo_lib_cs.HuffmanNode.Left{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defining a HuffmanNode property called "Left". This represents the left child of this node of the Huffman tree. }}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodes()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABT" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodesMusic()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTree()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTreeMusic()}}}
+.}\par
+}
+{\xe \v Right\:ce100_hw3_algo_lib_cs.HuffmanNode}
+{\xe \v ce100_hw3_algo_lib_cs.HuffmanNode\:Right}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 HuffmanNode}}}
+ ce100_hw3_algo_lib_cs.HuffmanNode.Right{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defining a HuffmanNode property called "Right". This represents the right child node of this node of the Huffman tree. }}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABM" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.Decompress()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABN" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.DecompressMusic()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodes()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABT" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.GenerateHuffmanCodesMusic()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTree()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding.WriteHuffmanTreeMusic()}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ce100-hw3-algo-lib-cs/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 Class1.cs}}}
+\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.IkeaAssemblyGuide Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.IkeaAssemblyGuide}
+{\xe \v ce100_hw3_algo_lib_cs.IkeaAssemblyGuide}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 IkeaAssemblyGuide}}}
+ ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the IkeaAssemblyGuide class. It initializes the list of assembly steps. }{
+}\par
+}\par}
+}
+{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Add Assembly Step\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+AddAssemblyStep Method\par
+Method to add an assembly step to the guide. It takes a step ID, a description, and a list of dependencies as arguments.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[stepId,description,dependencies int, string,List<int>] Add Assembly Step \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACJ" }{}}{\fldrslt {\cs37\ul\cf2 AddAssemblyStep}}}
+ (int stepId, string description, List< int > dependencies)\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Topological Sort\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+TopologicalSort Method\par
+Method to add an assembly step to the guide. It takes a step ID, a description, and a list of dependencies as arguments.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[] Topological Sort \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+List< int > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACK" }{}}{\fldrslt {\cs37\ul\cf2 TopologicalSort}}}
+ ()\par
+}
+}{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid Get Assembly Steps Text\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+GetAssemblyStepsText Method\par
+This method is to get the assembly steps in a proper order (based on their dependencies) in a text format.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[] Get Assembly Steps Text \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+List< string > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACL" }{}}{\fldrslt {\cs37\ul\cf2 GetAssemblyStepsText}}}
+ ()\par
+}
+}\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Member Functions\par
+\pard\plain 
+{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid DFS\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+DFS Method\par
+This is a private helper method to perform a depth-first search (DFS) from a given step ID.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i mass} \cell }{[stepId,visited,sortedStack,stepDict int, HashSet<int>,Stack<int>,Dictionary<int, AssemblyStep>] DFS \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACM" }{}}{\fldrslt {\cs37\ul\cf2 DFS}}}
+ (int stepId, HashSet< int > visited, Stack< int > sortedStack, Dictionary< int, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 AssemblyStep}}}
+ > stepDict)\par
+}
+}\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+List< {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 AssemblyStep}}}
+ > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACN" }{}}{\fldrslt {\cs37\ul\cf2 assemblySteps}}}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Define a private list of AssemblyStep objects. This will hold all the assembly steps in the guide. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v IkeaAssemblyGuide\:ce100_hw3_algo_lib_cs.IkeaAssemblyGuide}
+{\xe \v ce100_hw3_algo_lib_cs.IkeaAssemblyGuide\:IkeaAssemblyGuide}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.IkeaAssemblyGuide (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor for the IkeaAssemblyGuide class. It initializes the list of assembly steps. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initialize the list of assembly steps.\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACN" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.assemblySteps}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v AddAssemblyStep\:ce100_hw3_algo_lib_cs.IkeaAssemblyGuide}
+{\xe \v ce100_hw3_algo_lib_cs.IkeaAssemblyGuide\:AddAssemblyStep}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.AddAssemblyStep (int  {\i stepId}, string  {\i description}, List< int >  {\i dependencies}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Create a new AssemblyStep object with the provided arguments.\par
+Add the new assembly step to the list of assembly steps.\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACN" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.assemblySteps}}}
+.}\par
+}
+{\xe \v DFS\:ce100_hw3_algo_lib_cs.IkeaAssemblyGuide}
+{\xe \v ce100_hw3_algo_lib_cs.IkeaAssemblyGuide\:DFS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.DFS (int  {\i stepId}, HashSet< int >  {\i visited}, Stack< int >  {\i sortedStack}, Dictionary< int, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 AssemblyStep}}}
+ >  {\i stepDict}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Add the current step ID to the set of visited steps.\par
+Get the current step from the dictionary using the step ID.\par
+Iterate over each dependency of the current step.\par
+If a dependency has not been visited, perform a DFS from that dependency.\par
+After visiting all dependencies of the current step, add the current step ID to the stack.\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACM" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.DFS()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACM" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.DFS()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACK" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.TopologicalSort()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d6/d97/a00045_a846d57fb7f2cb6b0d4d1f089da24c20b_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d6/d97/a00045_a846d57fb7f2cb6b0d4d1f089da24c20b_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v GetAssemblyStepsText\:ce100_hw3_algo_lib_cs.IkeaAssemblyGuide}
+{\xe \v ce100_hw3_algo_lib_cs.IkeaAssemblyGuide\:GetAssemblyStepsText}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+List< string > ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.GetAssemblyStepsText (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Perform a topological sort to get the steps in the order they should be performed.\par
+Initialize a new list to store the steps in text format.\par
+Iterate over the sorted steps in reverse order. This is because the topological sort gives us the steps in reverse order (the last step comes first).\par
+Get the ID of the current step.\par
+Find the step with the current ID in the list of all assembly steps.\par
+Add the description of the current step to the list of step texts, prefixed by "Step \{stepId\}:".\par
+Return the list of step descriptions in the correct order.\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACN" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.assemblySteps}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACK" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.TopologicalSort()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d6/d97/a00045_a8d6301bf71ec31399902316ef4574daa_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v TopologicalSort\:ce100_hw3_algo_lib_cs.IkeaAssemblyGuide}
+{\xe \v ce100_hw3_algo_lib_cs.IkeaAssemblyGuide\:TopologicalSort}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+List< int > ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.TopologicalSort (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Create a dictionary from the list of assembly steps for easy lookup by step ID.\par
+Create a hash set to keep track of the steps that have been visited during the depth-first search (DFS).\par
+Create a stack to hold the sorted steps. Steps are added to the stack after all their dependencies have been visited.\par
+Iterate over each step in the dictionary. If a step has not been visited, perform a DFS from that step.\par
+Return the steps in the order they should be performed. Since we added steps to the stack after their dependencies,\par
+converting the stack to a list gives the correct order of steps.\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACN" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.assemblySteps}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACM" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.DFS()}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACL" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.GetAssemblyStepsText()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d6/d97/a00045_a7015a8adb8988aba828d74572ad2aa53_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d6/d97/a00045_a7015a8adb8988aba828d74572ad2aa53_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v assemblySteps\:ce100_hw3_algo_lib_cs.IkeaAssemblyGuide}
+{\xe \v ce100_hw3_algo_lib_cs.IkeaAssemblyGuide\:assemblySteps}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+List<{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 AssemblyStep}}}
+> ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.assemblySteps{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Define a private list of AssemblyStep objects. This will hold all the assembly steps in the guide. }}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACJ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.AddAssemblyStep()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACL" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.GetAssemblyStepsText()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.IkeaAssemblyGuide()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACK" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide.TopologicalSort()}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ce100-hw3-algo-lib-cs/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 Class1.cs}}}
+\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.PipelineSystem Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.PipelineSystem}
+{\xe \v ce100_hw3_algo_lib_cs.PipelineSystem}
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACO" }{}}{\fldrslt {\cs37\ul\cf2 PipelineSystem}}}
+ (int numberOfTrees)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+List< {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 EdgePS}}}
+ > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABJ" }{}}{\fldrslt {\cs37\ul\cf2 KruskalMST}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+List< string > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 GetMSTEdgesTextualDescriptions}}}
+ (List< {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 EdgePS}}}
+ > mstEdges)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACQ" }{}}{\fldrslt {\cs37\ul\cf2 GenerateRandomTreeLocations}}}
+ (int numberOfTrees)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 BuildConnections}}}
+ ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+List< {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Tree}}}
+ > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 _trees}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+List< {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 EdgePS}}}
+ > {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACT" }{}}{\fldrslt {\cs37\ul\cf2 _edges}}}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Represents a system that connects trees \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v PipelineSystem\:ce100_hw3_algo_lib_cs.PipelineSystem}
+{\xe \v ce100_hw3_algo_lib_cs.PipelineSystem\:PipelineSystem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ce100_hw3_algo_lib_cs.PipelineSystem.PipelineSystem (int  {\i numberOfTrees}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Runs a piplinesystem instance with the given number of trees \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+generates the positions of trees in random shapes\par
+makes connections between randomly positioned trees\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACT" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem._edges}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem._trees}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.BuildConnections()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACQ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.GenerateRandomTreeLocations()}}}
+.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d22/a00057_a5cfaed54f44f4e8280f6b8df30c4ee79_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v BuildConnections\:ce100_hw3_algo_lib_cs.PipelineSystem}
+{\xe \v ce100_hw3_algo_lib_cs.PipelineSystem\:BuildConnections}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.PipelineSystem.BuildConnections (){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+makes connections between randomly positioned trees \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Calculate the distance between two trees\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACT" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem._edges}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem._trees}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACO" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.PipelineSystem()}}}
+.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d22/a00057_aa83df91e897b1023c6b4be5e07e1c4e4_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v GenerateRandomTreeLocations\:ce100_hw3_algo_lib_cs.PipelineSystem}
+{\xe \v ce100_hw3_algo_lib_cs.PipelineSystem\:GenerateRandomTreeLocations}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.PipelineSystem.GenerateRandomTreeLocations (int  {\i numberOfTrees}){\f2 [inline]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+creates a new random object\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem._trees}}}
+.}\par
+{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACO" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.PipelineSystem()}}}
+.}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d22/a00057_ab4391bbc5c3f03e24077cde986e2ecde_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v GetMSTEdgesTextualDescriptions\:ce100_hw3_algo_lib_cs.PipelineSystem}
+{\xe \v ce100_hw3_algo_lib_cs.PipelineSystem\:GetMSTEdgesTextualDescriptions}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+List< string > ce100_hw3_algo_lib_cs.PipelineSystem.GetMSTEdgesTextualDescriptions (List< {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 EdgePS}}}
+ >  {\i mstEdges}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns textual descriptions of the edges of the minimum spanning tree (MST). {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i mstEdges} \cell }{List of edges in MST. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A list of textual descriptions of edges in the MST. \par
+}}}}
+{\xe \v KruskalMST\:ce100_hw3_algo_lib_cs.PipelineSystem}
+{\xe \v ce100_hw3_algo_lib_cs.PipelineSystem\:KruskalMST}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+List< {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 EdgePS}}}
+ > ce100_hw3_algo_lib_cs.PipelineSystem.KruskalMST (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Finds the minimum spanning tree (MST) of the system using Kruskal's algorithm. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A list of edges representing the MST. \par
+}}}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Code sequence that sorts edges by distance\par
+}{
+\ql
+References {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACT" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem._edges}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem._trees}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABH" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.EdgePS.Destination}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Tree.Id}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABG" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.EdgePS.Source}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v _edges\:ce100_hw3_algo_lib_cs.PipelineSystem}
+{\xe \v ce100_hw3_algo_lib_cs.PipelineSystem\:_edges}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+List<{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 EdgePS}}}
+> ce100_hw3_algo_lib_cs.PipelineSystem._edges{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A list of links between trees in the system \par
+}{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.BuildConnections()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABJ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.KruskalMST()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACO" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.PipelineSystem()}}}
+.}\par
+}
+{\xe \v _trees\:ce100_hw3_algo_lib_cs.PipelineSystem}
+{\xe \v ce100_hw3_algo_lib_cs.PipelineSystem\:_trees}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+List<{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Tree}}}
+> ce100_hw3_algo_lib_cs.PipelineSystem._trees{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Keeps a list of trees in the system \par
+}{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.BuildConnections()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACQ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.GenerateRandomTreeLocations()}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABJ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.KruskalMST()}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACO" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.PipelineSystem()}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ce100-hw3-algo-lib-cs/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 Class1.cs}}}
+\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.Tree Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.Tree}
+{\xe \v ce100_hw3_algo_lib_cs.Tree}
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 Id}}}
+{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+double {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACV" }{}}{\fldrslt {\cs37\ul\cf2 X}}}
+{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+double {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACW" }{}}{\fldrslt {\cs37\ul\cf2 Y}}}
+{\f2  [get, set]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Entries that define a tree \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Property Documentation\par
+\pard\plain 
+{\xe \v Id\:ce100_hw3_algo_lib_cs.Tree}
+{\xe \v ce100_hw3_algo_lib_cs.Tree\:Id}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int ce100_hw3_algo_lib_cs.Tree.Id{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Id of the tree entering the input \par
+}{
+\ql
+Referenced by {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABJ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem.KruskalMST()}}}
+.}\par
+}
+{\xe \v X\:ce100_hw3_algo_lib_cs.Tree}
+{\xe \v ce100_hw3_algo_lib_cs.Tree\:X}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+double ce100_hw3_algo_lib_cs.Tree.X{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+input showing the location of the tree on the X-axis \par
+}}
+{\xe \v Y\:ce100_hw3_algo_lib_cs.Tree}
+{\xe \v ce100_hw3_algo_lib_cs.Tree\:Y}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+double ce100_hw3_algo_lib_cs.Tree.Y{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+input showing the location of the tree on the Y-axis \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ce100-hw3-algo-lib-cs/{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 Class1.cs}}}
+\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100-hw3-algo-lib-cs/Class1.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v ce100-hw3-algo-lib-cs/Class1.cs}
+{\xe \v ce100-hw3-algo-lib-cs/Class1.cs}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b  HW-3 Functions }  }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanNode}}}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.HuffmanCoding}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.AssemblyStep}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAE" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.IkeaAssemblyGuide}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Tree}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.EdgePS}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.PipelineSystem}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.DisjointSet}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.Edge}}}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Using the Bellman-Ford algorithm to find the shortest paths from a source origin node to all other nodes in a graph. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs.BellmanFord}}}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+BellmanFord s\'C4\'B1n\'C4\'B1f\'C4\'B1, applies the Bellman-Ford algorithm to find the shortest path in a graph. }}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 ce100_hw3_algo_lib_cs}}}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b  HW-3 Functions }  \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Muhammed Berhan Kokum - Muhammed Enes Celik \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Date\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+13 May 2023\par
+}}HW-3 Sample Lib Functions\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+{\field {\*\fldinst { HYPERLINK "http://bilgisayar.mmf.erdogan.edu.tr/en/" }{}}{\fldrslt {\cs37\ul\cf2 http://bilgisayar.mmf.erdogan.edu.tr/en/}}}
+ \par
+}}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100-hw3-algo-lib-cs/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v ce100-hw3-algo-lib-cs/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs}
+{\xe \v ce100-hw3-algo-lib-cs/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs}
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100-hw3-algo-lib-cs/obj/Release/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v ce100-hw3-algo-lib-cs/obj/Release/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs}
+{\xe \v ce100-hw3-algo-lib-cs/obj/Release/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs}
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100-hw3-algo-lib-cs/obj/Debug/net7.0/ce100-hw3-algo-lib-cs.AssemblyInfo.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v ce100-hw3-algo-lib-cs/obj/Debug/net7.0/ce100-hw3-algo-lib-cs.AssemblyInfo.cs}
+{\xe \v ce100-hw3-algo-lib-cs/obj/Debug/net7.0/ce100-hw3-algo-lib-cs.AssemblyInfo.cs}
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100-hw3-algo-lib-cs/obj/Release/net7.0/ce100-hw3-algo-lib-cs.AssemblyInfo.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v ce100-hw3-algo-lib-cs/obj/Release/net7.0/ce100-hw3-algo-lib-cs.AssemblyInfo.cs}
+{\xe \v ce100-hw3-algo-lib-cs/obj/Release/net7.0/ce100-hw3-algo-lib-cs.AssemblyInfo.cs}
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100-hw3-algo-lib-cs/obj/Debug/net7.0/ce100-hw3-algo-lib-cs.GlobalUsings.g.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v ce100-hw3-algo-lib-cs/obj/Debug/net7.0/ce100-hw3-algo-lib-cs.GlobalUsings.g.cs}
+{\xe \v ce100-hw3-algo-lib-cs/obj/Debug/net7.0/ce100-hw3-algo-lib-cs.GlobalUsings.g.cs}
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100-hw3-algo-lib-cs/obj/Release/net7.0/ce100-hw3-algo-lib-cs.GlobalUsings.g.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v ce100-hw3-algo-lib-cs/obj/Release/net7.0/ce100-hw3-algo-lib-cs.GlobalUsings.g.cs}
+{\xe \v ce100-hw3-algo-lib-cs/obj/Release/net7.0/ce100-hw3-algo-lib-cs.GlobalUsings.g.cs}
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

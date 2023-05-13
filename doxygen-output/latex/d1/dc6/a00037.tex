@@ -1,0 +1,854 @@
+\hypertarget{a00037}{}\doxysection{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding Class Reference}
+\label{a00037}\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Compress}\par
+{\em Huffman Coding compress Function
+
+In this method .txt files are compressed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}input\+File\+Path, output\+File\+Path string\mbox{]} Compress Function \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00037_a9ee06d4149a24953729761d439dcba5b}{Compress}} (string input\+File\+Path, string output\+File\+Path)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Compress Music}\par
+{\em Huffman Coding compress Function
+
+In this method .MP3 files are compressed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}input\+File\+Path, output\+File\+Path string\mbox{]} Compress Function \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00037_a1a9b80d2bbca1af8427d8f52b784f506}{Compress\+Music}} (string input\+File\+Path, string output\+File\+Path)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Decompress}\par
+{\em Huffman Coding Decompress Function
+
+In this method .txt files are decompressed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}input\+File\+Path, output\+File\+Path string\mbox{]} Decompress Function \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00037_a1b562ea17d82d01a7ee03a0886010ce9}{Decompress}} (string input\+File\+Path, string output\+File\+Path)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Decompress Music}\par
+{\em Huffman Coding Decompress Function
+
+In this method .mp3 files are decompressed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}input\+File\+Path, output\+File\+Path string\mbox{]} Decompress Function \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00037_af0ae47782a69606df04a3c69e93515ab}{Decompress\+Music}} (string input\+File\+Path, string output\+File\+Path)
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Private Member Functions}
+\begin{Indent}\textbf{ Calculate Frequencies}\par
+{\em Huffman Coding Calculate\+Frequencies Function
+
+Method to calculate the frequencies of each character in a string
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}content string\mbox{]} Calculate Frequencies Function \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ char, int $>$ \mbox{\hyperlink{a00037_a2983cb4c628ada1bf5194e9a5be7ce68}{Calculate\+Frequencies}} (string content)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Calculate Frequencies Music}\par
+{\em Huffman Coding Calculate\+Frequencies\+Music Function
+
+Method to calculate the frequencies of each byte in a byte array
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}content string\mbox{]} Calculate Frequencies Function Music \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ byte, int $>$ \mbox{\hyperlink{a00037_a8d84293a194b37dfde97bf0822dfd063}{Calculate\+Frequencies\+Music}} (byte\mbox{[}$\,$\mbox{]} content)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Build Huffman Tree}\par
+{\em Huffman Coding Build\+Huffman\+Tree Function
+
+Method to build the Huffman tree from a dictionary of character frequencies
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}frequencies Dictionary$<$char, int$>$\mbox{]} Build Huffman Tree \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00033}{Huffman\+Node}} \mbox{\hyperlink{a00037_affcdeaa6badf321a09e37e76e712efae}{Build\+Huffman\+Tree}} (Dictionary$<$ char, int $>$ frequencies)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Build Huffman Tree Music}\par
+{\em Huffman Coding Build\+Huffman\+Tree\+Music Function
+
+Method to build the Huffman tree from a dictionary of byte frequencies
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}frequencies Dictionary$<$char, int$>$\mbox{]} Build Huffman Tree Music \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00033}{Huffman\+Node}} \mbox{\hyperlink{a00037_a27f286e0909c7cab5743a9ece17bd24c}{Build\+Huffman\+Tree\+Music}} (Dictionary$<$ byte, int $>$ frequencies)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Generate Huffman Codes}\par
+{\em Huffman Coding Generate\+Huffman\+Codes Function
+
+Method to generate Huffman codes for each character using the Huffman tree
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}code string\mbox{]} Generate Huffman Codes \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00037_a0da73d3540c0880297c5addaa506bff9}{Generate\+Huffman\+Codes}} (\mbox{\hyperlink{a00033}{Huffman\+Node}} node, string code)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Generate Huffman Codes Music}\par
+{\em Huffman Coding Generate\+Huffman\+Codes\+Music Function
+
+Method to generate Huffman codes for each byte using the Huffman tree.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}code string\mbox{]} Generate Huffman Codes Music \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00037_a454d5acc292a5400c1daf08a05627a26}{Generate\+Huffman\+Codes\+Music}} (\mbox{\hyperlink{a00033}{Huffman\+Node}} node, string code)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Read Huffman Tree}\par
+{\em Huffman Coding Read\+Huffman\+Tree Function
+
+Method to reconstruct the Huffman tree from binary data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}binary\+Reader Binary\+Reader\mbox{]} Read Huffman Tree \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00033}{Huffman\+Node}} \mbox{\hyperlink{a00037_af4b0bbb26ad996fba9cd355ae8d4051c}{Read\+Huffman\+Tree}} (Binary\+Reader binary\+Reader)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Read Huffman Tree Music}\par
+{\em Huffman Coding Read\+Huffman\+Tree\+Music Function
+
+Method to reconstruct the Huffman tree from binary data for music decompression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}binary\+Reader Binary\+Reader\mbox{]} Read Huffman Tree Music \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00033}{Huffman\+Node}} \mbox{\hyperlink{a00037_abef73fdccbdf277340b8c22e0cedfa6c}{Read\+Huffman\+Tree\+Music}} (Binary\+Reader binary\+Reader)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Convert to String}\par
+{\em Huffman Coding Convert\+To\+String Function
+
+Method to convert a byte array into a string of binary digits
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}bytes byte\mbox{]} Convert to String \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{a00037_a5dec26849da8660756cb34c0dfc50378}{Convert\+To\+String}} (byte\mbox{[}$\,$\mbox{]} bytes)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Write Huffman Tree}\par
+{\em Huffman Coding Write\+Huffman\+Tree Function
+
+Method to write the Huffman tree to binary data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}binary\+Writer,node Binary\+Writer, Huffman\+Node\mbox{]} Write Huffman Tree \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00037_ab2ae563d2e3680093be21533d41db21c}{Write\+Huffman\+Tree}} (Binary\+Writer binary\+Writer, \mbox{\hyperlink{a00033}{Huffman\+Node}} node)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Write Huffman Tree Music}\par
+{\em Huffman Coding Write\+Huffman\+Tree\+Music Function
+
+Method to write the Huffman tree for music to binary data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}binary\+Writer,node Binary\+Writer, Huffman\+Node\mbox{]} Write Huffman Tree Music \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00037_ac774266c6a7617b68c8e66cb4de43dff}{Write\+Huffman\+Tree\+Music}} (Binary\+Writer binary\+Writer, \mbox{\hyperlink{a00033}{Huffman\+Node}} node)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Convert to Bytes}\par
+{\em Huffman Coding Convert\+To\+Bytes Function
+
+Method to convert a binary string to an array of bytes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mass} & \mbox{[}binary\+Writer,node Binary\+Writer, Huffman\+Node\mbox{]} Convert to Bytes \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{a00037_a6047aaefe4b1888c936d73199af6599d}{Convert\+To\+Bytes}} (string binary\+String)
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ char, string $>$ \mbox{\hyperlink{a00037_ad2f46e3591e79e7ba45c88840cb34c5b}{\+\_\+huffman\+Codes}} = new Dictionary$<$char, string$>$()
+\begin{DoxyCompactList}\small\item\em Define two dictionaries to hold the Huffman codes for characters and mp3 bytes respectively. \end{DoxyCompactList}\item 
+Dictionary$<$ byte, string $>$ \mbox{\hyperlink{a00037_ad7844cae497832cb94ba34f648f2dd8d}{\+\_\+huffman\+Codesmp3}} = new Dictionary$<$byte, string$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00037_affcdeaa6badf321a09e37e76e712efae}\label{a00037_affcdeaa6badf321a09e37e76e712efae}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!BuildHuffmanTree@{BuildHuffmanTree}}
+\index{BuildHuffmanTree@{BuildHuffmanTree}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{BuildHuffmanTree()}{BuildHuffmanTree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00033}{Huffman\+Node}} ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Build\+Huffman\+Tree (\begin{DoxyParamCaption}\item[{Dictionary$<$ char, int $>$}]{frequencies }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Create a priority queue of Huffman nodes, each node is associated with a character and its frequency
+
+Continue until there is only one node left in the priority queue (the root of the Huffman tree)
+
+Order the priority queue by frequency
+
+The two nodes with the lowest frequency are combined into a new node
+
+Create a new node with the combined frequency of the two lowest nodes, and these two nodes as its children
+
+Remove the two lowest nodes from the priority queue
+
+Add the new node to the priority queue
+
+Return the remaining node in the priority queue, which is the root of the Huffman tree
+
+References \mbox{\hyperlink{a00033_ae479ad59df9b1b96af7b4bd6ebce27a2}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Frequency}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00037_a9ee06d4149a24953729761d439dcba5b}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_affcdeaa6badf321a09e37e76e712efae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_a27f286e0909c7cab5743a9ece17bd24c}\label{a00037_a27f286e0909c7cab5743a9ece17bd24c}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!BuildHuffmanTreeMusic@{BuildHuffmanTreeMusic}}
+\index{BuildHuffmanTreeMusic@{BuildHuffmanTreeMusic}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{BuildHuffmanTreeMusic()}{BuildHuffmanTreeMusic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00033}{Huffman\+Node}} ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Build\+Huffman\+Tree\+Music (\begin{DoxyParamCaption}\item[{Dictionary$<$ byte, int $>$}]{frequencies }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Create a priority queue of Huffman nodes, each node is associated with a byte and its frequency
+
+Continue until there is only one node left in the priority queue (the root of the Huffman tree)
+
+Order the priority queue by frequency
+
+The two nodes with the lowest frequency are combined into a new node
+
+Create a new node with the combined frequency of the two lowest nodes, and these two nodes as its children
+
+Remove the two lowest nodes from the priority queue
+
+Add the new node to the priority queue
+
+Return the remaining node in the priority queue, which is the root of the Huffman tree
+
+References \mbox{\hyperlink{a00033_ae479ad59df9b1b96af7b4bd6ebce27a2}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Frequency}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00037_a1a9b80d2bbca1af8427d8f52b784f506}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress\+Music()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_a27f286e0909c7cab5743a9ece17bd24c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_a2983cb4c628ada1bf5194e9a5be7ce68}\label{a00037_a2983cb4c628ada1bf5194e9a5be7ce68}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!CalculateFrequencies@{CalculateFrequencies}}
+\index{CalculateFrequencies@{CalculateFrequencies}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{CalculateFrequencies()}{CalculateFrequencies()}}
+{\footnotesize\ttfamily Dictionary$<$ char, int $>$ ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Calculate\+Frequencies (\begin{DoxyParamCaption}\item[{string}]{content }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Initialize a dictionary to hold the frequencies
+
+Iterate over each character in the string
+
+If the character is already in the dictionary, increment its frequency
+
+If the character is not in the dictionary, add it with a frequency of 1
+
+Return the dictionary of frequencies
+
+Referenced by \mbox{\hyperlink{a00037_a9ee06d4149a24953729761d439dcba5b}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_a2983cb4c628ada1bf5194e9a5be7ce68_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_a8d84293a194b37dfde97bf0822dfd063}\label{a00037_a8d84293a194b37dfde97bf0822dfd063}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!CalculateFrequenciesMusic@{CalculateFrequenciesMusic}}
+\index{CalculateFrequenciesMusic@{CalculateFrequenciesMusic}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{CalculateFrequenciesMusic()}{CalculateFrequenciesMusic()}}
+{\footnotesize\ttfamily Dictionary$<$ byte, int $>$ ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Calculate\+Frequencies\+Music (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{content }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Initialize a dictionary to hold the frequencies
+
+Iterate over each byte in the byte array
+
+If the byte is already in the dictionary, increment its frequency
+
+If the byte is not in the dictionary, add it with a frequency of 1
+
+Return the dictionary of frequencies
+
+Referenced by \mbox{\hyperlink{a00037_a1a9b80d2bbca1af8427d8f52b784f506}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress\+Music()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_a8d84293a194b37dfde97bf0822dfd063_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_a9ee06d4149a24953729761d439dcba5b}\label{a00037_a9ee06d4149a24953729761d439dcba5b}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!Compress@{Compress}}
+\index{Compress@{Compress}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{Compress()}{Compress()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress (\begin{DoxyParamCaption}\item[{string}]{input\+File\+Path,  }\item[{string}]{output\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Read the content of the input file
+
+Calculate the frequency of each character in the content
+
+Build the Huffman tree based on the calculated frequencies
+
+Generate the Huffman codes from the Huffman tree
+
+Initialize a String\+Builder to hold the compressed data
+
+Append the Huffman code for each character in the content to the compressed data
+
+Calculate the size of the padding needed to make the compressed data a multiple of 8
+
+If padding is needed, append \textquotesingle{}0\textquotesingle{}s to the compressed data
+
+Open a File\+Stream to write the compressed data to the output file
+
+Use a Binary\+Writer to write to the File\+Stream
+
+Write the Huffman tree to the output file
+
+Convert the compressed data to bytes
+
+Write the original length of the compressed data (without the padding) to the output file
+
+Write the length of the compressed data bytes to the output file
+
+Write the compressed data bytes to the output file
+
+Write the padding size to the output file
+
+References \mbox{\hyperlink{a00037_ad2f46e3591e79e7ba45c88840cb34c5b}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+\_\+huffman\+Codes}}, \mbox{\hyperlink{a00037_affcdeaa6badf321a09e37e76e712efae}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Build\+Huffman\+Tree()}}, \mbox{\hyperlink{a00037_a2983cb4c628ada1bf5194e9a5be7ce68}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Calculate\+Frequencies()}}, \mbox{\hyperlink{a00037_a6047aaefe4b1888c936d73199af6599d}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Convert\+To\+Bytes()}}, \mbox{\hyperlink{a00037_a0da73d3540c0880297c5addaa506bff9}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Generate\+Huffman\+Codes()}}, and \mbox{\hyperlink{a00037_ab2ae563d2e3680093be21533d41db21c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Write\+Huffman\+Tree()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_a9ee06d4149a24953729761d439dcba5b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_a1a9b80d2bbca1af8427d8f52b784f506}\label{a00037_a1a9b80d2bbca1af8427d8f52b784f506}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!CompressMusic@{CompressMusic}}
+\index{CompressMusic@{CompressMusic}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{CompressMusic()}{CompressMusic()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress\+Music (\begin{DoxyParamCaption}\item[{string}]{input\+File\+Path,  }\item[{string}]{output\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00037_ad7844cae497832cb94ba34f648f2dd8d}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+\_\+huffman\+Codesmp3}}, \mbox{\hyperlink{a00037_a27f286e0909c7cab5743a9ece17bd24c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Build\+Huffman\+Tree\+Music()}}, \mbox{\hyperlink{a00037_a8d84293a194b37dfde97bf0822dfd063}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Calculate\+Frequencies\+Music()}}, \mbox{\hyperlink{a00037_a6047aaefe4b1888c936d73199af6599d}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Convert\+To\+Bytes()}}, \mbox{\hyperlink{a00037_a454d5acc292a5400c1daf08a05627a26}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Generate\+Huffman\+Codes\+Music()}}, and \mbox{\hyperlink{a00037_ac774266c6a7617b68c8e66cb4de43dff}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Write\+Huffman\+Tree\+Music()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_a1a9b80d2bbca1af8427d8f52b784f506_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_a6047aaefe4b1888c936d73199af6599d}\label{a00037_a6047aaefe4b1888c936d73199af6599d}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!ConvertToBytes@{ConvertToBytes}}
+\index{ConvertToBytes@{ConvertToBytes}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{ConvertToBytes()}{ConvertToBytes()}}
+{\footnotesize\ttfamily byte\mbox{[}$\,$\mbox{]} ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Convert\+To\+Bytes (\begin{DoxyParamCaption}\item[{string}]{binary\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Calculate padding size -\/ how many extra \textquotesingle{}0\textquotesingle{}s need to be added to the end of the string
+
+to make it a multiple of 8 (length of one byte)
+
+If the padding size is not 8, pad the binary string with \textquotesingle{}0\textquotesingle{}s on the right
+
+Determine the number of bytes in the binary string
+
+Initialize a byte array of the determined size
+
+Iterate over the binary string in chunks of 8 characters (one byte)
+
+Extract the current chunk of 8 characters
+
+Convert the chunk to a byte and store it in the byte array
+
+Return the byte array
+
+Referenced by \mbox{\hyperlink{a00037_a9ee06d4149a24953729761d439dcba5b}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress()}}, and \mbox{\hyperlink{a00037_a1a9b80d2bbca1af8427d8f52b784f506}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress\+Music()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_a6047aaefe4b1888c936d73199af6599d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_a5dec26849da8660756cb34c0dfc50378}\label{a00037_a5dec26849da8660756cb34c0dfc50378}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!ConvertToString@{ConvertToString}}
+\index{ConvertToString@{ConvertToString}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{ConvertToString()}{ConvertToString()}}
+{\footnotesize\ttfamily string ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Convert\+To\+String (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Initialize a String\+Builder with capacity equal to the number of bytes times 8 (since each byte has 8 bits)
+
+For each byte in the input array
+
+Convert the byte to a binary string (base 2), pad with leading zeros to ensure it\textquotesingle{}s always 8 digits long,
+
+and append it to the String\+Builder
+
+Return the binary string
+
+Referenced by \mbox{\hyperlink{a00037_a1b562ea17d82d01a7ee03a0886010ce9}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Decompress()}}, and \mbox{\hyperlink{a00037_af0ae47782a69606df04a3c69e93515ab}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Decompress\+Music()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_a5dec26849da8660756cb34c0dfc50378_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_a1b562ea17d82d01a7ee03a0886010ce9}\label{a00037_a1b562ea17d82d01a7ee03a0886010ce9}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!Decompress@{Decompress}}
+\index{Decompress@{Decompress}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{Decompress()}{Decompress()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Decompress (\begin{DoxyParamCaption}\item[{string}]{input\+File\+Path,  }\item[{string}]{output\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Open a File\+Stream to read the compressed data from the input file
+
+Use a Binary\+Reader to read from the File\+Stream
+
+Read the Huffman tree from the input file
+
+Read the original length of the compressed data (without the padding) from the input file
+
+Read the length of the compressed data bytes from the input file
+
+Read the compressed data bytes from the input file
+
+Convert the compressed data bytes to a string and remove any padding
+
+Initialize a String\+Builder to hold the decompressed data
+
+Define a variable to hold the current node in the Huffman tree
+
+Iterate over each bit in the compressed data
+
+If the bit is \textquotesingle{}0\textquotesingle{}, move to the left child of the current node, otherwise move to the right child
+
+If the current node is a leaf node, append its character to the decompressed data and reset the current node to the root of the Huffman tree
+
+Write the decompressed data to the output file
+
+References \mbox{\hyperlink{a00037_a5dec26849da8660756cb34c0dfc50378}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Convert\+To\+String()}}, \mbox{\hyperlink{a00037_af4b0bbb26ad996fba9cd355ae8d4051c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Read\+Huffman\+Tree()}}, and \mbox{\hyperlink{a00033_a28dd3c34f1723198899eabb5c82467e5}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Right}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_a1b562ea17d82d01a7ee03a0886010ce9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_af0ae47782a69606df04a3c69e93515ab}\label{a00037_af0ae47782a69606df04a3c69e93515ab}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!DecompressMusic@{DecompressMusic}}
+\index{DecompressMusic@{DecompressMusic}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{DecompressMusic()}{DecompressMusic()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Decompress\+Music (\begin{DoxyParamCaption}\item[{string}]{input\+File\+Path,  }\item[{string}]{output\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Open a File\+Stream to read the compressed data from the input file
+
+Use a Binary\+Reader to read from the File\+Stream
+
+Read the Huffman tree from the input file
+
+Read the original length of the compressed data (without the padding) from the input file
+
+Read the length of the compressed data bytes from the input file
+
+Read the compressed data bytes from the input file
+
+Convert the compressed data bytes to a string and remove any padding
+
+Initialize a list to hold the decompressed data
+
+Define a variable to hold the current node in the Huffman tree
+
+Iterate over each bit in the compressed data
+
+If the bit is \textquotesingle{}0\textquotesingle{}, move to the left child of the current node, otherwise move to the right child
+
+If the current node is a leaf node, append its byte to the decompressed data and reset the current node to the root of the Huffman tree
+
+Write the decompressed data to the output file
+
+References \mbox{\hyperlink{a00037_a5dec26849da8660756cb34c0dfc50378}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Convert\+To\+String()}}, \mbox{\hyperlink{a00037_abef73fdccbdf277340b8c22e0cedfa6c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Read\+Huffman\+Tree\+Music()}}, and \mbox{\hyperlink{a00033_a28dd3c34f1723198899eabb5c82467e5}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Right}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_af0ae47782a69606df04a3c69e93515ab_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_a0da73d3540c0880297c5addaa506bff9}\label{a00037_a0da73d3540c0880297c5addaa506bff9}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!GenerateHuffmanCodes@{GenerateHuffmanCodes}}
+\index{GenerateHuffmanCodes@{GenerateHuffmanCodes}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{GenerateHuffmanCodes()}{GenerateHuffmanCodes()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Generate\+Huffman\+Codes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00033}{Huffman\+Node}}}]{node,  }\item[{string}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+If the node is null, return immediately
+
+If the node is a leaf node (i.\+e., it has no children),
+
+then it represents a character, and we assign the current code to this character
+
+Recursively generate codes for the left and right children,
+
+appending \textquotesingle{}0\textquotesingle{} for the left child and \textquotesingle{}1\textquotesingle{} for the right child
+
+References \mbox{\hyperlink{a00037_ad2f46e3591e79e7ba45c88840cb34c5b}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+\_\+huffman\+Codes}}, \mbox{\hyperlink{a00033_a239403b6481c5544a294cf4ce63671c5}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Character}}, \mbox{\hyperlink{a00037_a0da73d3540c0880297c5addaa506bff9}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Generate\+Huffman\+Codes()}}, \mbox{\hyperlink{a00033_a0f25a44b762038e572b6021b2a76198e}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Left}}, and \mbox{\hyperlink{a00033_a28dd3c34f1723198899eabb5c82467e5}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Right}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00037_a9ee06d4149a24953729761d439dcba5b}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress()}}, and \mbox{\hyperlink{a00037_a0da73d3540c0880297c5addaa506bff9}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Generate\+Huffman\+Codes()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d1/dc6/a00037_a0da73d3540c0880297c5addaa506bff9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_a0da73d3540c0880297c5addaa506bff9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_a454d5acc292a5400c1daf08a05627a26}\label{a00037_a454d5acc292a5400c1daf08a05627a26}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!GenerateHuffmanCodesMusic@{GenerateHuffmanCodesMusic}}
+\index{GenerateHuffmanCodesMusic@{GenerateHuffmanCodesMusic}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{GenerateHuffmanCodesMusic()}{GenerateHuffmanCodesMusic()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Generate\+Huffman\+Codes\+Music (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00033}{Huffman\+Node}}}]{node,  }\item[{string}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+If the node is null, return immediately
+
+If the node is a leaf node (i.\+e., it has no children),
+
+then it represents a byte, and we assign the current code to this byte
+
+Recursively generate codes for the left and right children,
+
+appending \textquotesingle{}0\textquotesingle{} for the left child and \textquotesingle{}1\textquotesingle{} for the right child
+
+References \mbox{\hyperlink{a00037_ad7844cae497832cb94ba34f648f2dd8d}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+\_\+huffman\+Codesmp3}}, \mbox{\hyperlink{a00033_af8a06b07e85a9e1181d1e696f0d215fe}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Character2}}, \mbox{\hyperlink{a00037_a454d5acc292a5400c1daf08a05627a26}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Generate\+Huffman\+Codes\+Music()}}, \mbox{\hyperlink{a00033_a0f25a44b762038e572b6021b2a76198e}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Left}}, and \mbox{\hyperlink{a00033_a28dd3c34f1723198899eabb5c82467e5}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Right}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00037_a1a9b80d2bbca1af8427d8f52b784f506}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress\+Music()}}, and \mbox{\hyperlink{a00037_a454d5acc292a5400c1daf08a05627a26}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Generate\+Huffman\+Codes\+Music()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d1/dc6/a00037_a454d5acc292a5400c1daf08a05627a26_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_a454d5acc292a5400c1daf08a05627a26_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_af4b0bbb26ad996fba9cd355ae8d4051c}\label{a00037_af4b0bbb26ad996fba9cd355ae8d4051c}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!ReadHuffmanTree@{ReadHuffmanTree}}
+\index{ReadHuffmanTree@{ReadHuffmanTree}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{ReadHuffmanTree()}{ReadHuffmanTree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00033}{Huffman\+Node}} ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Read\+Huffman\+Tree (\begin{DoxyParamCaption}\item[{Binary\+Reader}]{binary\+Reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+If there are no more bytes to read, return null
+
+Read the node type (1 for leaf nodes, other values for internal nodes)
+
+If the node type is 1, it\textquotesingle{}s a leaf node, so we read the character
+
+Read the character from the binary data
+
+Create and return a new leaf node with this character
+
+If the node type is not 1, it\textquotesingle{}s an internal node, so we read the left and right children
+
+Recursively read the left child
+
+Recursively read the right child
+
+Create and return a new internal node with these children
+
+References \mbox{\hyperlink{a00037_af4b0bbb26ad996fba9cd355ae8d4051c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Read\+Huffman\+Tree()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00037_a1b562ea17d82d01a7ee03a0886010ce9}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Decompress()}}, and \mbox{\hyperlink{a00037_af4b0bbb26ad996fba9cd355ae8d4051c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Read\+Huffman\+Tree()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{d1/dc6/a00037_af4b0bbb26ad996fba9cd355ae8d4051c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_af4b0bbb26ad996fba9cd355ae8d4051c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_abef73fdccbdf277340b8c22e0cedfa6c}\label{a00037_abef73fdccbdf277340b8c22e0cedfa6c}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!ReadHuffmanTreeMusic@{ReadHuffmanTreeMusic}}
+\index{ReadHuffmanTreeMusic@{ReadHuffmanTreeMusic}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{ReadHuffmanTreeMusic()}{ReadHuffmanTreeMusic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00033}{Huffman\+Node}} ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Read\+Huffman\+Tree\+Music (\begin{DoxyParamCaption}\item[{Binary\+Reader}]{binary\+Reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+If there are no more bytes to read, return null
+
+Read the node type (1 for leaf nodes, other values for internal nodes)
+
+If the node type is 1, it\textquotesingle{}s a leaf node, so we read the byte
+
+Read the byte from the binary data
+
+Create and return a new leaf node with this byte
+
+If the node type is not 1, it\textquotesingle{}s an internal node, so we read the left and right children
+
+Recursively read the left child
+
+Recursively read the right child
+
+Create and return a new internal node with these children
+
+References \mbox{\hyperlink{a00037_abef73fdccbdf277340b8c22e0cedfa6c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Read\+Huffman\+Tree\+Music()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00037_af0ae47782a69606df04a3c69e93515ab}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Decompress\+Music()}}, and \mbox{\hyperlink{a00037_abef73fdccbdf277340b8c22e0cedfa6c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Read\+Huffman\+Tree\+Music()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{d1/dc6/a00037_abef73fdccbdf277340b8c22e0cedfa6c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_abef73fdccbdf277340b8c22e0cedfa6c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_ab2ae563d2e3680093be21533d41db21c}\label{a00037_ab2ae563d2e3680093be21533d41db21c}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!WriteHuffmanTree@{WriteHuffmanTree}}
+\index{WriteHuffmanTree@{WriteHuffmanTree}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{WriteHuffmanTree()}{WriteHuffmanTree()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Write\+Huffman\+Tree (\begin{DoxyParamCaption}\item[{Binary\+Writer}]{binary\+Writer,  }\item[{\mbox{\hyperlink{a00033}{Huffman\+Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+If the node is null, we\textquotesingle{}ve reached a leaf node, so return
+
+If the node is a leaf node (both left and right children are null)
+
+Write a byte value of 1 to denote a leaf node
+
+Write the character of this leaf node (convert the character to ushort for writing)
+
+If the node is an internal node (it has at least one child)
+
+Write a byte value of 0 to denote an internal node
+
+Recursively write the left child
+
+Recursively write the right child
+
+References \mbox{\hyperlink{a00033_a239403b6481c5544a294cf4ce63671c5}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Character}}, \mbox{\hyperlink{a00033_a0f25a44b762038e572b6021b2a76198e}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Left}}, \mbox{\hyperlink{a00033_a28dd3c34f1723198899eabb5c82467e5}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Right}}, and \mbox{\hyperlink{a00037_ab2ae563d2e3680093be21533d41db21c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Write\+Huffman\+Tree()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00037_a9ee06d4149a24953729761d439dcba5b}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress()}}, and \mbox{\hyperlink{a00037_ab2ae563d2e3680093be21533d41db21c}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Write\+Huffman\+Tree()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{d1/dc6/a00037_ab2ae563d2e3680093be21533d41db21c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_ab2ae563d2e3680093be21533d41db21c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00037_ac774266c6a7617b68c8e66cb4de43dff}\label{a00037_ac774266c6a7617b68c8e66cb4de43dff}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!WriteHuffmanTreeMusic@{WriteHuffmanTreeMusic}}
+\index{WriteHuffmanTreeMusic@{WriteHuffmanTreeMusic}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{WriteHuffmanTreeMusic()}{WriteHuffmanTreeMusic()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Write\+Huffman\+Tree\+Music (\begin{DoxyParamCaption}\item[{Binary\+Writer}]{binary\+Writer,  }\item[{\mbox{\hyperlink{a00033}{Huffman\+Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+If the node is null, we\textquotesingle{}ve reached a leaf node, so return
+
+If the node is a leaf node (both left and right children are null)
+
+Write a byte value of 1 to denote a leaf node
+
+Write the byte (Character2) of this leaf node
+
+If the node is an internal node (it has at least one child)
+
+Write a byte value of 0 to denote an internal node
+
+Recursively write the left child
+
+Recursively write the right child
+
+References \mbox{\hyperlink{a00033_af8a06b07e85a9e1181d1e696f0d215fe}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Character2}}, \mbox{\hyperlink{a00033_a0f25a44b762038e572b6021b2a76198e}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Left}}, \mbox{\hyperlink{a00033_a28dd3c34f1723198899eabb5c82467e5}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Node.\+Right}}, and \mbox{\hyperlink{a00037_ac774266c6a7617b68c8e66cb4de43dff}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Write\+Huffman\+Tree\+Music()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00037_a1a9b80d2bbca1af8427d8f52b784f506}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress\+Music()}}, and \mbox{\hyperlink{a00037_ac774266c6a7617b68c8e66cb4de43dff}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Write\+Huffman\+Tree\+Music()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{d1/dc6/a00037_ac774266c6a7617b68c8e66cb4de43dff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dc6/a00037_ac774266c6a7617b68c8e66cb4de43dff_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{a00037_ad2f46e3591e79e7ba45c88840cb34c5b}\label{a00037_ad2f46e3591e79e7ba45c88840cb34c5b}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!\_huffmanCodes@{\_huffmanCodes}}
+\index{\_huffmanCodes@{\_huffmanCodes}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{\_huffmanCodes}{\_huffmanCodes}}
+{\footnotesize\ttfamily Dictionary$<$char, string$>$ ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+\_\+huffman\+Codes = new Dictionary$<$char, string$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Define two dictionaries to hold the Huffman codes for characters and mp3 bytes respectively. 
+
+
+
+Referenced by \mbox{\hyperlink{a00037_a9ee06d4149a24953729761d439dcba5b}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress()}}, and \mbox{\hyperlink{a00037_a0da73d3540c0880297c5addaa506bff9}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Generate\+Huffman\+Codes()}}.
+
+\mbox{\Hypertarget{a00037_ad7844cae497832cb94ba34f648f2dd8d}\label{a00037_ad7844cae497832cb94ba34f648f2dd8d}} 
+\index{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}!\_huffmanCodesmp3@{\_huffmanCodesmp3}}
+\index{\_huffmanCodesmp3@{\_huffmanCodesmp3}!ce100\_hw3\_algo\_lib\_cs.HuffmanCoding@{ce100\_hw3\_algo\_lib\_cs.HuffmanCoding}}
+\doxysubsubsection{\texorpdfstring{\_huffmanCodesmp3}{\_huffmanCodesmp3}}
+{\footnotesize\ttfamily Dictionary$<$byte, string$>$ ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+\_\+huffman\+Codesmp3 = new Dictionary$<$byte, string$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00037_a1a9b80d2bbca1af8427d8f52b784f506}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Compress\+Music()}}, and \mbox{\hyperlink{a00037_a454d5acc292a5400c1daf08a05627a26}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman\+Coding.\+Generate\+Huffman\+Codes\+Music()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce100-\/hw3-\/algo-\/lib-\/cs/\mbox{\hyperlink{a00002}{Class1.\+cs}}\end{DoxyCompactItemize}

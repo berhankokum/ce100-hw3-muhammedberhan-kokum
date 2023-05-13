@@ -1,0 +1,114 @@
+\hypertarget{a00065}{}\doxysection{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Edge Class Reference}
+\label{a00065}\index{ce100\_hw3\_algo\_lib\_cs.Edge@{ce100\_hw3\_algo\_lib\_cs.Edge}}
+
+
+Using the Bellman-\/\+Ford algorithm to find the shortest paths from a source origin node to all other nodes in a graph.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00065_a63e9b07270ee69cf69ba0cdd54765b01}{Edge}} (int source, int destination, int weight)
+\begin{DoxyCompactList}\small\item\em Constructor for Edge class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{a00065_aaa4746344d0c7a1e0daa88b4e2cefcfe}{Source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Source vertex of the edge. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{a00065_a143d351a5d217d060df71f85ab2fcf47}{Destination}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Destination vertex of the edge. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{a00065_a06886119a651e77d9113e9ce2e18bf7b}{Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Weight of the edge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Using the Bellman-\/\+Ford algorithm to find the shortest paths from a source origin node to all other nodes in a graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em edges} & is the list of edges in the graph \\
+\hline
+{\em vertices\+Count} & keeps the number of nodes in the graph \\
+\hline
+{\em source} & source node used to find the shortest path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sequence of distances from the source node to all other nodes in the graph 
+\end{DoxyReturn}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00065_a63e9b07270ee69cf69ba0cdd54765b01}\label{a00065_a63e9b07270ee69cf69ba0cdd54765b01}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Edge@{ce100\_hw3\_algo\_lib\_cs.Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!ce100\_hw3\_algo\_lib\_cs.Edge@{ce100\_hw3\_algo\_lib\_cs.Edge}}
+\doxysubsubsection{\texorpdfstring{Edge()}{Edge()}}
+{\footnotesize\ttfamily ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Edge.\+Edge (\begin{DoxyParamCaption}\item[{int}]{source,  }\item[{int}]{destination,  }\item[{int}]{weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for Edge class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Source vertex of the edge \\
+\hline
+{\em destination} & Destination vertex of the edge \\
+\hline
+{\em weight} & Weight of the edge \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{a00065_a143d351a5d217d060df71f85ab2fcf47}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Edge.\+Destination}}, \mbox{\hyperlink{a00065_aaa4746344d0c7a1e0daa88b4e2cefcfe}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Edge.\+Source}}, and \mbox{\hyperlink{a00065_a06886119a651e77d9113e9ce2e18bf7b}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Edge.\+Weight}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{a00065_a143d351a5d217d060df71f85ab2fcf47}\label{a00065_a143d351a5d217d060df71f85ab2fcf47}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Edge@{ce100\_hw3\_algo\_lib\_cs.Edge}!Destination@{Destination}}
+\index{Destination@{Destination}!ce100\_hw3\_algo\_lib\_cs.Edge@{ce100\_hw3\_algo\_lib\_cs.Edge}}
+\doxysubsubsection{\texorpdfstring{Destination}{Destination}}
+{\footnotesize\ttfamily int ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Edge.\+Destination\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Destination vertex of the edge. 
+
+
+
+Referenced by \mbox{\hyperlink{a00065_a63e9b07270ee69cf69ba0cdd54765b01}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Edge.\+Edge()}}, and \mbox{\hyperlink{a00069_a687feec94140870af373fb773e3293dc}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Bellman\+Ford.\+Find\+Shortest\+Path()}}.
+
+\mbox{\Hypertarget{a00065_aaa4746344d0c7a1e0daa88b4e2cefcfe}\label{a00065_aaa4746344d0c7a1e0daa88b4e2cefcfe}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Edge@{ce100\_hw3\_algo\_lib\_cs.Edge}!Source@{Source}}
+\index{Source@{Source}!ce100\_hw3\_algo\_lib\_cs.Edge@{ce100\_hw3\_algo\_lib\_cs.Edge}}
+\doxysubsubsection{\texorpdfstring{Source}{Source}}
+{\footnotesize\ttfamily int ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Edge.\+Source\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Source vertex of the edge. 
+
+
+
+Referenced by \mbox{\hyperlink{a00065_a63e9b07270ee69cf69ba0cdd54765b01}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Edge.\+Edge()}}, and \mbox{\hyperlink{a00069_a687feec94140870af373fb773e3293dc}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Bellman\+Ford.\+Find\+Shortest\+Path()}}.
+
+\mbox{\Hypertarget{a00065_a06886119a651e77d9113e9ce2e18bf7b}\label{a00065_a06886119a651e77d9113e9ce2e18bf7b}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Edge@{ce100\_hw3\_algo\_lib\_cs.Edge}!Weight@{Weight}}
+\index{Weight@{Weight}!ce100\_hw3\_algo\_lib\_cs.Edge@{ce100\_hw3\_algo\_lib\_cs.Edge}}
+\doxysubsubsection{\texorpdfstring{Weight}{Weight}}
+{\footnotesize\ttfamily int ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Edge.\+Weight\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Weight of the edge. 
+
+
+
+Referenced by \mbox{\hyperlink{a00065_a63e9b07270ee69cf69ba0cdd54765b01}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Edge.\+Edge()}}, and \mbox{\hyperlink{a00069_a687feec94140870af373fb773e3293dc}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Bellman\+Ford.\+Find\+Shortest\+Path()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce100-\/hw3-\/algo-\/lib-\/cs/\mbox{\hyperlink{a00002}{Class1.\+cs}}\end{DoxyCompactItemize}
